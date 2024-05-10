@@ -1,0 +1,730 @@
+{
+  "artikelen": [
+    {
+      "id": 1,
+      "titel": "Amethyst",
+      "omschrijving": "Prachtige amethyststeen, bekend om zijn kalmerende en beschermende eigenschappen. Perfect voor spirituele groei en balans.",
+      "afbeelding": "/src/assets/images/product__1.webp",
+      "prijs": 12.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 3,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Paars",
+        "gewicht": "100 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Geweldige kwaliteit en snelle levering!"
+        },
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar iets kleiner dan verwacht."
+        },
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 5,
+          "opmerking": "Ik voel de positieve energie!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titel": "Bergkristal",
+      "omschrijving": "Een heldere bergkristalsteen, symbool van zuiverheid en energie. Brengt positieve vibes en helderheid in elke ruimte.",
+      "afbeelding": "/src/assets/images/product__2.webp",
+      "prijs": 15.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 0,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Helder",
+        "gewicht": "120 gram",
+        "afmetingen": "6 x 4 x 3 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 5,
+          "opmerking": "Prachtige kristal, jammer dat het uitverkocht is!"
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Ik had gehoopt er een te bemachtigen. Hopelijk is het snel weer op voorraad."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titel": "Lapis lazuli",
+      "omschrijving": "Diepblauwe lapis lazuli, bekend om zijn spirituele eigenschappen en helende krachten. Een symbool van wijsheid en waarheid.",
+      "afbeelding": "/src/assets/images/product__3.png",
+      "prijs": 18.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 35,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Diepblauw",
+        "gewicht": "90 gram",
+        "afmetingen": "4 x 2.5 x 1.5 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Geweldig product, snel geleverd!"
+        },
+        {
+          "gebruikersnaam": "Jack",
+          "beoordeling": 4,
+          "opmerking": "Mooie steen, precies zoals beschreven."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titel": "Tijgeroog",
+      "omschrijving": "Tijgeroogsteen met zijn warme gouden tinten, staat bekend om bescherming en het stimuleren van zelfvertrouwen. Brengt moed en kracht.",
+      "afbeelding": "/src/assets/images/product__4.webp",
+      "prijs": 14.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 45,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Goudbruin",
+        "gewicht": "85 gram",
+        "afmetingen": "4.5 x 3 x 1.5 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Isabella",
+          "beoordeling": 5,
+          "opmerking": "Mijn favoriete steen tot nu toe!"
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Goede kwaliteit, snelle levering."
+        },
+        {
+          "gebruikersnaam": "Oliver",
+          "beoordeling": 5,
+          "opmerking": "Voel me beschermd met deze steen."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titel": "Rozenkwarts",
+      "omschrijving": "Liefdevolle rozenkwartssteen, symbool van liefde en harmonie. Brengt zachtheid en helende energie in je leven.",
+      "afbeelding": "/src/assets/images/product__5.png",
+      "prijs": 16.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 30,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Roze",
+        "gewicht": "95 gram",
+        "afmetingen": "5 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 5,
+          "opmerking": "Prachtige steen, helpt me ontspannen."
+        },
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 4,
+          "opmerking": "Mooie energie, voel me meer in balans."
+        },
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 5,
+          "opmerking": "Snel geleverd, goed verpakt. Tevreden klant!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titel": "Jade",
+      "omschrijving": "Groene jade, een symbool van welvaart en geluk. Brengt positieve energie en balans in je leven.",
+      "afbeelding": "/src/assets/images/product__6.webp",
+      "prijs": 20.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 25,
+      "filter": "gemiddelde",
+      "specs": {
+        "kleur": "Groen",
+        "gewicht": "110 gram",
+        "afmetingen": "6 x 3.5 x 2.5 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 5,
+          "opmerking": "Geweldige kwaliteit, voelt echt als een geluksbrenger."
+        },
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar iets groter dan verwacht."
+        },
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 5,
+          "opmerking": "Positieve energie stroomt door me heen!"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titel": "Sodaliet",
+      "omschrijving": "Diepblauwe sodalietsteen, bekend om zijn kalmerende en harmoniserende eigenschappen. Stimuleert intuïtie en zelfvertrouwen.",
+      "afbeelding": "/src/assets/images/product__7.webp",
+      "prijs": 17.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 38,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Diepblauw",
+        "gewicht": "100 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Geweldige aankoop, voel me rustiger."
+        },
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 4,
+          "opmerking": "Mooie steen, snelle levering."
+        },
+        {
+          "gebruikersnaam": "Ethan",
+          "beoordeling": 5,
+          "opmerking": "Positieve vibes!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titel": "Onyx",
+      "omschrijving": "Krachtige onyxsteen, bekend om zijn beschermende eigenschappen en het absorberen van negatieve energieën. Brengt helderheid en focus.",
+      "afbeelding": "/src/assets/images/product__8.webp",
+      "prijs": 22.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 20,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Zwart",
+        "gewicht": "125 gram",
+        "afmetingen": "7 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Isabella",
+          "beoordeling": 5,
+          "opmerking": "Topkwaliteit, voel me geconcentreerder."
+        },
+        {
+          "gebruikersnaam": "Jack",
+          "beoordeling": 4,
+          "opmerking": "Stoere steen, past goed in mijn collectie."
+        },
+        {
+          "gebruikersnaam": "Sophia",
+          "beoordeling": 5,
+          "opmerking": "Heeft me geholpen met negatieve energieën."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titel": "Citrien",
+      "omschrijving": "Stralende citriensteen, symbool van vreugde en overvloed. Brengt positiviteit en energie in je leven.",
+      "afbeelding": "/src/assets/images/product__9.webp",
+      "prijs": 19.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 32,
+      "filter": "gemiddelde",
+      "specs": {
+        "kleur": "Geel",
+        "gewicht": "90 gram",
+        "afmetingen": "6 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Echt een oppepper, voel me energieker!"
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar iets kleiner dan verwacht."
+        },
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Positieve vibes all the way!"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titel": "Aventurijn",
+      "omschrijving": "Groene aventurijnsteen, bekend om zijn helende eigenschappen en het aantrekken van voorspoed. Brengt geluk en welzijn.",
+      "afbeelding": "/src/assets/images/product__10.png",
+      "prijs": 14.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 42,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Groen",
+        "gewicht": "80 gram",
+        "afmetingen": "4.5 x 3 x 1.5 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Ethan",
+          "beoordeling": 5,
+          "opmerking": "Mooie steen, brengt geluk!"
+        },
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 4,
+          "opmerking": "Goede kwaliteit, betaalbaar."
+        },
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 5,
+          "opmerking": "Geluk lijkt mijn kant op te komen!"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titel": "Rhodoniet",
+      "omschrijving": "Rhodonietsteen, bekend om zijn kalmerende en genezende eigenschappen. Stimuleert liefde en compassie.",
+      "afbeelding": "/src/assets/images/product__11.png",
+      "prijs": 16.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 28,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Roze",
+        "gewicht": "95 gram",
+        "afmetingen": "5 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Mijn emotionele balans is verbeterd."
+        },
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar iets kwetsbaarder dan ik dacht."
+        },
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 5,
+          "opmerking": "Liefde en compassie stromen door deze steen."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titel": "Larimarst",
+      "omschrijving": "Larimarsteen met zijn zachte blauwe tinten, symbool van rust en vrede. Brengt een gevoel van kalmte en sereniteit.",
+      "afbeelding": "/src/assets/images/product__12.webp",
+      "prijs": 24.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 18,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Lichtblauw",
+        "gewicht": "100 gram",
+        "afmetingen": "6 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Kalmerend en vredig, precies wat ik nodig had."
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar iets groter dan ik had verwacht."
+        },
+        {
+          "gebruikersnaam": "Sophia",
+          "beoordeling": 5,
+          "opmerking": "Een kunstwerk van de natuur, prachtig!"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titel": "Quartz",
+      "omschrijving": "Quartzsteen, bekend om zijn helderheid en energetische eigenschappen. Helpt bij het bevorderen van helder denken en positieve energie.",
+      "afbeelding": "/src/assets/images/product__13.webp",
+      "prijs": 15.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 40,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Transparant",
+        "gewicht": "85 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Mijn gedachten zijn helderder dan ooit tevoren."
+        },
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 4,
+          "opmerking": "Mooi en betaalbaar, een goede deal."
+        },
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 5,
+          "opmerking": "Positieve energie stroomt door deze steen."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titel": "Carneool",
+      "omschrijving": "Dieprode carneoolsteen, symbool van moed en passie. Stimuleert creativiteit en vitaliteit.",
+      "afbeelding": "/src/assets/images/product__14.webp",
+      "prijs": 18.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 36,
+      "filter": "goedkoop",
+      "specs": {
+        "kleur": "Dieprood",
+        "gewicht": "95 gram",
+        "afmetingen": "5 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Ethan",
+          "beoordeling": 5,
+          "opmerking": "Een boost van energie, liefde deze steen!"
+        },
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 4,
+          "opmerking": "Mooi en levendig, een aanwinst voor mijn collectie."
+        },
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 5,
+          "opmerking": "Creativiteit stroomt, voel me geïnspireerd."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titel": "Agaat",
+      "omschrijving": "Prachtige agaatsteen, bekend om zijn balancerende eigenschappen en het bevorderen van innerlijke rust.",
+      "afbeelding": "/src/assets/images/product__15.webp",
+      "prijs": 21.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 22,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Meerkleurig",
+        "gewicht": "110 gram",
+        "afmetingen": "6 x 3.5 x 2.5 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Evenwicht in mijn leven, dankzij deze agaatsteen."
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Prachtige kleuren, een kunstwerk van de natuur."
+        },
+        {
+          "gebruikersnaam": "Sophia",
+          "beoordeling": 5,
+          "opmerking": "Helpt echt bij innerlijke rust, een must-have!"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titel": "Rookkwarts",
+      "omschrijving": "Rookkwartssteen, bekend om zijn aardende eigenschappen en het neutraliseren van negatieve energieën.",
+      "afbeelding": "/src/assets/images/product__16.png",
+      "prijs": 20.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 25,
+      "filter": "gemiddelde",
+      "specs": {
+        "kleur": "Bruin",
+        "gewicht": "100 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 5,
+          "opmerking": "Voel me gegrond en beschermd met deze steen."
+        },
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 4,
+          "opmerking": "Mooie steen, draag het dagelijks."
+        },
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 5,
+          "opmerking": "Helpt echt bij het neutraliseren van stress."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titel": "Smaragd",
+      "omschrijving": "Smaragdsteen, bekend om zijn krachtige genezende eigenschappen en het bevorderen van harmonie en welzijn.",
+      "afbeelding": "/src/assets/images/product__17.png",
+      "prijs": 28.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 15,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Groen",
+        "gewicht": "120 gram",
+        "afmetingen": "7 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Een krachtige steen, voel me in balans."
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Prachtig, maar een beetje prijzig."
+        },
+        {
+          "gebruikersnaam": "Sophia",
+          "beoordeling": 5,
+          "opmerking": "Heeft mijn spirituele groei bevorderd, een aanrader!"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titel": "Seleniet",
+      "omschrijving": "Selenietsteen, symbool van zuiverheid en spirituele groei. Brengt rust en helderheid in je leven.",
+      "afbeelding": "/src/assets/images/product__18.webp",
+      "prijs": 17.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 28,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Wit",
+        "gewicht": "80 gram",
+        "afmetingen": "6 x 3 x 1.5 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Zuiverheid straalt uit deze steen, prachtig!"
+        },
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar breekbaar, voorzichtig mee zijn."
+        },
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 5,
+          "opmerking": "Helpt bij meditatie, brengt rust."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titel": "Unakiet",
+      "omschrijving": "Unakietsteen, bekend om zijn kalmerende eigenschappen en het bevorderen van balans. Helpt bij emotionele genezing.",
+      "afbeelding": "/src/assets/images/product__19.png",
+      "prijs": 15.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 32,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Groen met roze",
+        "gewicht": "90 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Ethan",
+          "beoordeling": 5,
+          "opmerking": "Helpt echt bij het verwerken van emoties."
+        },
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 4,
+          "opmerking": "Mooie steen, voel me gebalanceerd."
+        },
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 5,
+          "opmerking": "Een must-have voor emotionele genezing."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titel": "Saffier",
+      "omschrijving": "Saffiersteen, bekend om zijn spirituele eigenschappen en het bevorderen van innerlijke wijsheid en inzicht.",
+      "afbeelding": "/src/assets/images/product__20.webp",
+      "prijs": 25.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 18,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Blauw",
+        "gewicht": "110 gram",
+        "afmetingen": "6 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Een spirituele reis met deze prachtige saffier."
+        },
+        {
+          "gebruikersnaam": "Mason",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar een beetje zwaar."
+        },
+        {
+          "gebruikersnaam": "Sophia",
+          "beoordeling": 5,
+          "opmerking": "Innerlijke wijsheid stroomt, voel me geïnspireerd."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "titel": "Labradoriet",
+      "omschrijving": "Labradorietsteen, symbool van intuïtie en mystiek. Helpt bij het versterken van spirituele krachten.",
+      "afbeelding": "/src/assets/images/product__21.png",
+      "prijs": 25.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 15,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Grijs met blauw",
+        "gewicht": "95 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Liam",
+          "beoordeling": 5,
+          "opmerking": "Intuïtie is versterkt, voel me meer in contact."
+        },
+        {
+          "gebruikersnaam": "Emma",
+          "beoordeling": 4,
+          "opmerking": "Mooie kleuren, een eye-catcher."
+        },
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 5,
+          "opmerking": "Mystiek en prachtig, ben er dol op!"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "titel": "Fluoriet",
+      "omschrijving": "Fluorietsteen, bekend om zijn beschermende eigenschappen en het stimuleren van intellectuele groei.",
+      "afbeelding": "/src/assets/images/product__22.png",
+      "prijs": 21.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 22,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Paars en groen",
+        "gewicht": "100 gram",
+        "afmetingen": "6 x 4 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Ava",
+          "beoordeling": 5,
+          "opmerking": "Voel me beschermd en geconcentreerd met fluoriet."
+        },
+        {
+          "gebruikersnaam": "Noah",
+          "beoordeling": 4,
+          "opmerking": "Mooi, maar iets kleiner dan verwacht."
+        },
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 5,
+          "opmerking": "Stimuleert mijn intellect, geweldige steen!"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "titel": "Apatiet",
+      "omschrijving": "Apatietsteen, bekend om zijn energieke eigenschappen en het stimuleren van persoonlijke groei.",
+      "afbeelding": "/src/assets/images/product__23.png",
+      "prijs": 24.99,
+      "btw_tarief": 21,
+      "hoeveelheid_voorraad": 18,
+      "filter": "duur",
+      "specs": {
+        "kleur": "Blauw",
+        "gewicht": "85 gram",
+        "afmetingen": "5 x 3 x 2 cm"
+      },
+      "reviews": [
+        {
+          "gebruikersnaam": "Ethan",
+          "beoordeling": 5,
+          "opmerking": "Energiek en motiverend, perfect voor persoonlijke groei."
+        },
+        {
+          "gebruikersnaam": "Sophie",
+          "beoordeling": 4,
+          "opmerking": "Mooie steen, voel me gemotiveerd."
+        },
+        {
+          "gebruikersnaam": "Olivia",
+          "beoordeling": 5,
+          "opmerking": "Stimuleert creativiteit, een geweldige aanvulling op mijn collectie."
+        }
+      ]
+    }
+  ]
+}
