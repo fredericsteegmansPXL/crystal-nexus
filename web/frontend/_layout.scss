@@ -1,0 +1,802 @@
+@use 'base' as *;
+
+/*-------- NAV START --------*/
+.main__nav {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-top: 5px;
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    .toggle-icon {
+      cursor: pointer;
+    }
+  }
+
+  .nav__item {
+    padding: 10px;
+    display: none;
+  }
+
+  .nav__item.show {
+    display: block;
+  }
+
+  @media (min-width: 1025px) {
+    flex-direction: row;
+
+    .brand {
+      display: block;
+    }
+
+    .nav__item:nth-child(2) {
+      margin-left: auto;
+    }
+
+    .nav__item:nth-child(4) {
+      margin-left: 20px;
+    }
+
+    .nav__item {
+      display: block;
+    }
+
+    .toggle-icon {
+      display: none;
+    }
+  }
+}
+/*-------- NAV END --------*/
+
+
+/*-------- LOG IN START--------*/
+.login {
+  @include flexLayout;
+  flex-direction: column;
+  width: 80vw;
+  margin: 10% auto 20%;
+
+
+  .login__layout {
+    @include flexLayout;
+    flex-direction: row;
+    align-items: stretch;
+
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+
+      .login__links,
+      .signin__rechts {
+        flex: 1;
+        border-radius: 20px;
+      }
+    }
+
+    .login__links {
+      flex: 2;
+      flex-direction: column;
+      padding: 35px;
+
+      .login__radio__forgot a {
+        margin-left: 35px;
+      }
+
+      h1 {
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      .login__gegevens {
+        &__adres__kader {
+          @include kaderInput(10px);
+        }
+
+        &__wachtwoord__kader {
+          @include kaderInput(2px);
+        }
+
+
+
+        .login__sumbit {
+          margin-top: 7px;
+          margin-bottom: 15px;
+          text-align: center;
+
+          button {
+            @include buttonLayoutGroot;
+          }
+        }
+
+        .login__signin__more {
+          i {
+            padding-top: 5px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .signin__rechts {
+      flex: 1.5;
+      flex-direction: column;
+      padding: 35px;
+
+
+      h1 {
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .signin__sumbit {
+        margin-top: 7px;
+        margin-bottom: 15px;
+        text-align: center;
+
+        button {
+          @include buttonLayoutGroot;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .login__links,
+      .signin__rechts {
+        flex: 1;
+      }
+
+      .login {
+        width: 100%;
+      }
+    }
+  }
+}
+/*________LOGIN EINDE________*/
+
+
+
+
+
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
+.product__header {
+  height: 100px;
+  padding: 30px 15px 15px 15px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/*________search/filter gegevens start________*/
+.product__search {
+  padding: 20px;
+  text-align: center;
+
+  .product__layout {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  &__bar {
+    @include flexLayout;
+    margin-top: 20px;
+
+    input {
+      padding: 10px;
+      width: 70%;
+    }
+
+    button {
+      padding: 10px 12px;
+    }
+  }
+
+  .product__filter {
+    margin-top: 20px;
+    margin-bottom: 10%;
+    @include flexLayout;
+    justify-content: center;
+
+    .filter__option {
+      padding: 8px 16px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+/*________product cards gegevens start________*/
+.card__layout {
+  @include flexLayout;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+
+    .card {
+      width: 90%;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      width: 30%;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    flex-wrap: wrap;
+
+    .card {
+      width: 23%;
+    }
+  }
+}
+
+.card {
+  width: 20%;
+  height: auto;
+  margin: 25px 0 20px 0;
+  padding: 20px 5px 20px 5px;
+
+
+  &__image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__content {
+    padding: 15px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__details {
+    text-align: center;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    button {
+      @include buttonLayoutGroot;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+/*________pagination gegevens start________*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      margin: 0 5px;
+    }
+
+    a {
+      padding: 4px 8px;
+    }
+  }
+}
+/*________PRODUCT EINDE________*/
+
+
+/*________PRODUCT DETAIL________*/
+.detail {
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    justify-content: start;
+  }
+
+  &__layout {
+    display: flex;
+    width: 65%;
+    height: 65%;
+    margin: 20px;
+    padding: 20px;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+
+    .detail__layout__foto {
+      width: 100%;
+      margin: 0;
+    }
+
+    .detail__layout__tekst {
+      text-align: left;
+      align-self: flex-start;
+      margin-top: 20px;
+      width: 80%;
+    }
+  }
+
+    @media screen and (min-width: 1800px) {
+      flex-direction: row;
+
+      &__tekst {
+        width: 30%;
+        margin-top: 0;
+      }
+
+      &__foto {
+        width: 70%;
+        margin: 0;
+      }
+    }
+
+    &__foto {
+      width: 60%;
+      padding: 10px;
+      margin: 0 15px 0 0;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__aanzichten {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      img {
+        width: 20%;
+        height: auto;
+        margin: 0 5px 10px;
+      }
+    }
+
+    &__tekst {
+      width: 70%;
+      align-self: flex-start;
+      margin-top: 20px;
+      flex: 1;
+
+      &__stars {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        i {
+          margin-left: 5px;
+        }
+
+        p {
+          margin-left: 10px;
+        }
+      }
+
+      &__info {
+        h1 {
+          margin-top: 20px;
+        }
+
+        p {
+          margin-top: 5px;
+        }
+      }
+
+      &__options {
+        margin: 20px 0 10px 0;
+        display: flex;
+        flex-direction: row;
+
+        p {
+          margin: 0 20px 0 0;
+          padding: 0 10px 0 0;
+        }
+      }
+
+      &__About {
+        p {
+          margin-top: 20px;
+        }
+      }
+
+      &__buttons {
+        button {
+          @include buttonLayoutKlein;
+          margin: 5px;
+
+          &:last-child {
+            margin-left:2px;
+          }
+        }
+      }
+
+      .quantityDropdown {
+        @include buttonLayoutKlein;
+        margin: 5px;
+      }
+    }
+  }
+}
+/*________PRODUCT DETAIL EINDE________*/
+
+
+/*________WINKELMANDJE START________*/
+.shopping__cart {
+  @include flexLayout;
+  flex-direction: column;
+}
+
+
+
+/*________WINKELMANDJE EINDE________*/
+
+
+/*________INDEX START________*/
+.index__header {
+  @include flexLayout;
+  flex-direction: row;
+  margin-top: 75px;
+
+  &__links {
+    flex-direction: column;
+    flex-basis: 40%;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 40%;
+      padding: 12px;
+      margin-top: 35px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__rechts {
+    flex-direction: column;
+    flex-basis: 40%;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .index__header {
+    text-align: center;
+    flex-direction: column;
+
+    &__links {
+      width: 70%;
+    }
+
+    &__rechts img {
+      margin-top: 25px;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+
+
+
+/* Basisstijlen voor de kijker start */
+.index__kijker {
+  @include flexLayout;
+  margin: 60px 20px 20px 20px;
+  padding: 20px;
+
+  &__links__2 {
+    flex-basis: 5%;
+  }
+
+  &__links {
+    flex-basis: 25%;
+    text-align: center;
+
+    img {
+      margin-right: 50px;
+      width: 100%;
+      height: 450px;
+      object-fit: contain;
+    }
+
+    button {
+      @include buttonLayoutKlein;
+      margin: 10px;
+    }
+  }
+
+  &__rechts {
+    flex-basis: 25%;
+
+    h1 {
+      margin-bottom: 20px;
+      justify-content: start;
+    }
+
+    button {
+      @include buttonLayoutGroot;
+      margin-left: 0;
+      margin-top: 35px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .index__kijker {
+    flex-direction: column;
+
+    button {
+      @include buttonLayoutKleinGsm;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* index cards */
+.index__card {
+  margin-top: 30px;
+
+  h1 {
+    text-align: center;
+    margin: 25px 10px 15px 10px;
+  }
+
+  h2 {
+    margin: 0 0 20px 0;
+  }
+
+  &__rotate {
+    display: flex;
+    justify-content: center;
+
+    @for $teller from 1 through $card_counter {
+      &__special:nth-child(#{$teller}) {
+        width: 25%;
+        height: 350px;
+        border: none;
+        margin: 25px;
+        padding: 25px;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        @if $teller == 1 {
+          transform: rotate(2deg);
+        } @else if $teller == 2 {
+          transform: rotate(5deg);
+        } @else if $teller == 3 {
+          transform: rotate(-10deg);
+        }
+
+        &:hover {
+          transform: scale(1.05);
+          background-color: $licht_blauw;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+          p {
+            color: $donkerder_blauw;
+          }
+
+          h2 {
+            color: $donkerder_blauw;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .index__card {
+      &__rotate {
+        justify-content: center;
+        margin: 25px;
+
+        &__special {
+          width: 41%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .index__card {
+      &__rotate {
+        flex-direction: column;
+        align-items: center;
+
+        &__special {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* contact cards */
+.index__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 100px 30px 100px;
+  height: 45vh;
+
+  &__links {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 25px;
+
+    img {
+      width: 75%;
+      height: auto;
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+
+  &__rechts {
+    flex-basis: 40%;
+
+    h1 {
+      margin-bottom: 20px;
+      justify-content: start;
+    }
+
+    button {
+      @include buttonLayoutGroot;
+      margin-left: 0;
+      margin-top: 35px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+
+    &__rechts {
+      order: -1;
+      text-align: center;
+    }
+
+    &__links img {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 30px;
+
+    &__links img {
+      display: none;
+    }
+
+
+    button {
+      @include buttonLayoutKleinGsm;
+    }
+  }
+}
+
+/*________INDEX EINDE________*/
+
+
+
+/*________FOOTER START________*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+
+  &__section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+    &__contact {
+      button {
+        @include buttonLayoutGroot;
+      }
+    }
+
+    &__links {
+      img {
+        max-width: 80%;
+        height: auto;
+      }
+    }
+
+    &__products {
+      @include flexLayout;
+      flex-direction: column;
+    }
+  }
+
+  &__copy-right {
+    @include flexLayout;
+    padding: 10px;
+  }
+
+
+  @media (max-width: 767px) {
+    &__section {
+      flex: 1 100%;
+    }
+
+    &__section {
+      &__links,
+      &__products,
+      &__contact {
+        order: 1;
+      }
+
+      button {
+        @include buttonLayoutGrootGsm();
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+/*________FOOTER EINDE________*/
+
+
+
+
+
+
+

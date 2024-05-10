@@ -1,0 +1,879 @@
+@use 'base' as *;
+
+/*_____FONDS/ALGEMEEN START_____*/
+h1, h2, h3 {
+  font-family: $font_Oswald;
+  color: $donker_blauw;
+
+}
+
+h1 {
+  font-weight: 600;
+  font-size: $font_titel;
+}
+
+label, p, a {
+  font-family: $font_Rubik;
+  font-size: $font_tekst;
+  color: $wit;
+}
+
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: radial-gradient($donkerder_blauw, $donker_thema );
+  animation: gradientAnimation 5s infinite alternate;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 6px;
+  background-color: $donker_thema;
+}
+
+body::-webkit-scrollbar-track {
+  background: $licht_blauw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $donker_blauw;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/*_____FONDS/ALGEMEEN EINDE_____*/
+
+
+
+/*________NAV START________*/
+.main__nav {
+  background-color: transparent;
+  color: $wit;
+
+  .nav__item {
+    color: $wit;
+  }
+  .brand {
+    .toggle-icon {
+      font-size: $font_titel;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .nav__item {
+      i {
+        font-size: $font_subtitel;
+      }
+    }
+  }
+}
+/*________NAV EINDE________*/
+
+
+
+/*________LOGIN START________*/
+.login {
+  h1 {
+    font-size: $font_subtitel2;
+  }
+  &__links {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: $blauw;
+
+
+    .login__gegevens {
+      &__adres__tekst,
+      &__wachtwoord__tekst {
+        font-size: $font_klein;
+      }
+
+      .login__radio__forgot label, .login__radio__forgot a{
+        font-size: $font_klein;
+      }
+    }
+
+    .login__signin__more {
+      i {
+        font-size: $font_subtitel2;
+        color: $wit;
+        margin: 5px;
+      }
+    }
+
+    .login__sumbit {
+      button {
+        @include buttonLayoutGroot();
+        margin-left: 0;
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
+      }
+    }
+  }
+
+  .signin__rechts {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url("../../Web_Expert_PE2-main/src/assets/images/abstract_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: $font_subtitel2;
+      color: $licht_blauw;
+    }
+
+    input {
+      @include kaderInput(2px);
+
+    }
+
+    p {
+      color: $licht_blauw;
+      font-size: $font_klein;
+    }
+
+    button {
+      @include buttonOpmaak($licht_blauw);
+      color: $zwart;
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+/*________LOGIN EINDE________*/
+
+
+
+
+/*________SIGNUP START________*/
+.signup__form {
+  p {
+    color: $licht_blauw;
+    font-size: $font_klein;
+  }
+
+  &__formulier {
+    @include flexLayout();
+
+    label {
+      margin-right: 10px;
+    }
+
+    input {
+      @include kaderInput(10px);
+    }
+
+
+
+    button {
+      @include buttonLayoutGroot($licht_blauw);
+      color: $zwart;
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
+  }
+}
+
+
+
+/*________SIGNUP EINDE________*/
+
+
+
+
+/*________POP UP START________*/
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 999;
+}
+
+.popup__content {
+  text-align: center;
+}
+
+.popup__content p {
+  color: #0a333e;
+  margin: 10px;
+}
+
+.popup__content button {
+  @include buttonLayoutKlein();
+  margin: 10px;
+}
+/*________POP UP EINDE________*/
+
+
+
+
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
+.product__header {
+  h1 {
+    color: $licht_blauw;
+  }
+
+  p {
+    color: $wit;
+  }
+
+  /*________search/filter gegevens start________*/
+  .product__search {
+    &__bar {
+      input {
+        border: 1px solid $licht_blauw;
+        border-radius: 4px 0 0 4px;
+      }
+
+      button {
+        background-color: $donker_blauw;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
+      }
+    }
+  }
+}
+.product__filter {
+  .filter__option {
+    transition: background-color 0.3s;
+    background-color: $blauw;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $donker_blauw;
+      color: $licht_blauw;
+    }
+  }
+}
+
+
+
+
+/*________product cards gegevens________*/
+.card {
+  &__title {
+    color: $licht_blauw;
+  }
+
+  &__description {
+    color: $wit;
+  }
+
+  &__details {
+    p {
+      font-weight: bold;
+      color: $licht_blauw;
+    }
+
+    button {
+      @include buttonOpmaak($licht_blauw);
+      margin: 0 auto;
+      color: $donkerder_blauw;
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
+  }
+}
+
+
+/*________pagination gegevens________*/
+.pagination {
+    a {
+      display: block;
+      text-decoration: none;
+      color: $donkerder_blauw;
+      background-color: $licht_blauw;
+      font-size: $font_klein;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+
+      &.active {
+        background-color: $blauw;
+        color: $wit;
+      }
+
+      &:hover {
+        background-color: $blauw;
+      }
+    }
+}
+/*________PRODUCT EINDE________*/
+
+
+
+
+/*________BEVESTIGINGSPAGINA START________*/
+.bevestigings__pagina {
+  padding: 20px;
+}
+
+.bestelde__artikelen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.besteld__artikel {
+  display: flex;
+  margin: 25px;
+}
+
+.besteld__artikel img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.product__details {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.volledige__totale__prijs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*________BEVESTIGINGSPAGINA EINDE________*/
+
+
+
+/*________PRODUCT DETAIL________*/
+.detail {
+  &__layout {
+    background-color: $blauw;
+    border-radius: 4px;
+
+    .detail__layout__tekst__Reviews {
+      &__sectie {
+        margin-top: 15px;
+      }
+    }
+
+    &__foto {
+      background-color: $donker_blauw;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    @media screen and (min-width: 1800px) {
+      &__tekst {
+        font-size: $font_tekst;
+      }
+    }
+
+    &__tekst {
+      &__stars {
+        i, p {
+          color: $donkerder_blauw;
+        }
+      }
+
+      &__info {
+        .aanwezigheid {
+          color: $succes;
+          font-size: $font_klein;
+        }
+
+        h2 {
+          font-size: $font_titel;
+        }
+      }
+
+      &__options {
+        a {
+          text-decoration: none;
+          color: $zwart;
+          border-right: 1px solid black;
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+
+        a:first-child {
+          font-weight: 600;
+        }
+
+        a:hover,
+        a:first-child:active {
+          font-weight: 600;
+        }
+
+      }
+
+      &__buttons {
+        button {
+          @include buttonOpmaak();
+
+          &:hover {
+            background-color: $donkerder_blauw;
+          }
+        }
+      }
+
+      .quantityDropdown {
+        @include buttonOpmaak();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: $font_subtitel;
+  }
+
+  p {
+    font-size: $font_tekst;
+  }
+}
+
+/*________PRODUCT DETAIL EINDE________*/
+
+
+/*________WINKELMANDJE START________*/
+.winkelmandje {
+  display: flex;
+  justify-content: center;
+  margin: 50px 50px;
+
+  &__product__sectie {
+    color: $wit;
+    margin-right: 50px;
+
+    h2 {
+      color: $wit;
+      margin-bottom: 20px;
+    }
+
+    &__artikelen {
+      display: flex;
+      flex-direction: row;
+      background-color: $blauw;
+      width: 1000px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+
+      img {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+      }
+
+      .deel__1 {
+        h2 {
+          margin-top: 25px;
+        }
+        p {
+          width: 75%;
+        }
+        button {
+          @include buttonLayoutKlein();
+        }
+        .aftellen {
+          margin: 10px 10px 10px 0;
+        }
+        .optellen {
+          margin: 10px;
+        }
+      }
+
+      .deel__2 {
+        margin: 25px;
+        width: 25%;
+      }
+      .break {
+        border-bottom: $zwart 2px solid;
+      }
+
+      .totaal {
+        margin: 10px;
+      }
+    }
+
+    .product__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .product__image {
+        margin-right: 20px;
+      }
+
+      .product__details {
+        flex: 1;
+      }
+
+      .product__price {
+        margin-left: auto;
+      }
+    }
+  }
+
+
+  &__product__checkout{
+    justify-content: center;
+    color: $wit;
+
+
+    .border {
+      background-color: $licht_blauw;
+      padding: 30px;
+      border-radius: 4px;
+    }
+    h2 {
+      color: $wit;
+      margin-bottom: 20px;
+    }
+    li {
+      margin: 10px 10px 10px 0;
+    }
+
+    button {
+      @include buttonLayoutKlein()
+    }
+  }
+}
+
+
+/*________WINKELMANDJE EINDE________*/
+
+
+
+
+
+
+/*________CHECKOUT START________*/
+//top
+h1 {
+  color: $wit;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+//links
+.checkout__view {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__links {
+
+  }
+  h1 {
+    color: $wit;
+    margin: 25px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    color: $wit;
+  }
+
+  .flex__input__group {
+    display: flex;
+
+    .input__group {
+      margin-right: 25px;
+    }
+  }
+
+  .input__group {
+    margin-bottom: 30px;
+
+    label {
+      font-size: $font_klein;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    input {
+      font-size: $font_klein;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    #nummer {
+      width: 20%;
+    }
+    #postcode {
+      width: 10%;
+    }
+  }
+
+  button {
+    @include buttonLayoutKlein($licht_blauw);
+    margin: 0 auto;
+    color: $donkerder_blauw;
+
+    &:hover {
+      background-color: $blauw;
+    }
+  }
+
+//Rechterkant
+  .winkelmandje__producten__rechts {
+    margin-top: 20px;
+
+    h2 {
+      margin-bottom: 10px;
+      color: $wit;
+    }
+
+    .winkelmandje__item {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        border-bottom: 2px solid $wit;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      p {
+        margin: 0;
+      }
+      .product__details {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .winkelmandje__producten__prijs {
+    margin-top: 40px;
+  }
+}
+
+
+/*________CHECKOUT EINDE________*/
+
+
+
+
+/*________INDEX START________*/
+.index__header {
+  &__links {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font_groot;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .index__header {
+    h1 {
+      font-size: $font_titel;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .index__header {
+    &__links {
+      h1 {
+        font-size: $font_titel_gsm;
+      }
+    }
+  }
+}
+
+
+/* kijker start*/
+.index__kijker {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+      font-size: $font-groot;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .index__kijker {
+    h1 {
+      font-size: $font_titel_gsm;
+    }
+  }
+}
+
+
+/* index cards */
+.index__card {
+  h1 {
+    color: $licht_blauw;
+    font-size: $font_titel;
+  }
+
+  &__rotate {
+    &__special {
+      background-color: $blauw;
+      border-radius: 10px;
+
+
+      h2 {
+        font-size: $font_subtitel2;
+      }
+
+    }
+  }
+}
+
+
+
+
+/* CONTACT CARTS */
+.index__contact {
+  &__rechts {
+    h1 {
+      color: $licht_blauw;
+    }
+
+    p {
+      color: $wit;
+    }
+
+    button {
+      @include buttonOpmaak();
+
+      &:hover {
+        background-color: $donkerder_blauw;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .index__card {
+    h1 {
+      font-size: $font_titel_gsm;
+    }
+  }
+}
+
+/*________INDEX EINDE________*/
+
+
+/*________FOOTER START________*/
+
+.footer {
+  background-color: $blauw;
+
+  @media (max-width: 767px) {
+    .footer__titel {
+      font-size: $font_titel_gsm;
+    }
+
+    .footer__tekst {
+      font-size: $font_tekst_gsm;
+    }
+
+    .footer__kleinTekst {
+      font-size: $font_kleinKekst_gsm;
+    }
+
+    button {
+      @include buttonOpmaakGsm();
+    }
+  }
+
+  &__section {
+    &__contact {
+      button {
+        @include buttonOpmaak();
+
+        &:hover {
+          background-color: $donkerder_blauw;
+        }
+      }
+    }
+
+    .footer__titel {
+      font-size: $font_subtitel;
+    }
+
+    .footer__tekst {
+      font-size: $font_tekst;
+    }
+  }
+
+  &__copy-right {
+    border-top: 1px solid $donkerder_blauw;
+    background-color: $blauw;
+  }
+}
+/*________FOOTER EINDE________*/
+
