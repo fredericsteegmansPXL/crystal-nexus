@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - ae5c8a44-7aad-44e3-bb2a-85d8b83ebf5a # startpagina
+handle: startpagina
+maxAuthors: 1
+name: startpagina
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
+    enabledByDefault: true
+    hasUrls: true
+    template: startpagina/_entry
+    uriFormat: startpagina
+type: single

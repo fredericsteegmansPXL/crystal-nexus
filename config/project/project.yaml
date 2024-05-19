@@ -1,11 +1,24 @@
-dateModified: 1715006655
+dateModified: 1716128687
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: false
+    name: assets
+    settings:
+      path: '@webroot/files'
+    type: craft\fs\Local
+    url: null
 meta:
   __names__:
+    0d5adc84-159d-4815-a7b0-209aff3e442f: Afbeelding # Afbeelding
     2e7d7668-a91d-4a34-a51a-8f30daf55386: 'Crystal Nexus' # Crystal Nexus
+    6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
+    ae5c8a44-7aad-44e3-bb2a-85d8b83ebf5a: startpagina # startpagina
+    bf6f36b8-d33d-42b1-9184-f0009c62d623: Hoofdtitel # Hoofdtitel
+    c2f2127e-f0a9-4c4b-a158-b709d02cbef5: afbeeldingen # afbeeldingen
     cd90f7c3-4c21-4827-970f-dce47c74c709: 'Crystal Nexus' # Crystal Nexus
 system:
   edition: solo

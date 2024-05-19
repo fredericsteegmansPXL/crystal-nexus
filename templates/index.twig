@@ -1,3 +1,7 @@
+{% set Afbeelding %}
+
+
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -16,17 +20,17 @@
 <body>
 <h1> test test hallo</h1>
 
-{#<div class="index__main">#}
-{#    <div class="index__header">#}
-{#        <div class="index__header__links">#}
-{#            <h1> {{ Hoofdtitel }}</h1>#}
+<div class="index__main">
+    <div class="index__header">
+        <div class="index__header__links">
+            <h1>{{ entry.Hoofdtitel }}</h1>
 {#            <p>{{ Hoofdtekst }}</p>#}
 {#            <button type="button">{{  HoofdButton }}</button>#}
-{#        </div>#}
-{#        <div class="index__header__rechts">#}
-{#            <img :src="afbeelding1Pad" :alt="afbeelding1Alt">#}
-{#        </div>#}
-{#    </div>#}
+        </div>
+        <div class="index__header__rechts">
+            <img> {{ Afbeelding.url }} alt="{{ Afbeelding.title }}"
+        </div>
+    </div>
 
 
 {#    <!--in de kijker -->#}
