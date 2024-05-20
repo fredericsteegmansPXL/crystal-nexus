@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: cardtitel3
+instructions: null
+name: cardtitel3
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

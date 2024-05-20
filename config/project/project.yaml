@@ -1,22 +1,36 @@
-dateModified: 1716128687
+dateModified: 1716147896
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   assets:
-    hasUrls: false
+    hasUrls: true
     name: assets
     settings:
       path: '@webroot/files'
     type: craft\fs\Local
-    url: null
+    url: /files
 meta:
   __names__:
     0d5adc84-159d-4815-a7b0-209aff3e442f: Afbeelding # Afbeelding
+    2ab87770-18f6-4aa4-a8b7-98c122dd4a1a: cardtitel2 # cardtitel2
     2e7d7668-a91d-4a34-a51a-8f30daf55386: 'Crystal Nexus' # Crystal Nexus
+    2f9a4255-b8ae-40ea-8649-cf456b33e30c: 'Contact Button' # Contact Button
+    5ba78f2e-e30c-4756-9ab8-1cb8ea1ea5f2: 'Hero Image' # Hero Image
     6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
+    61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
+    797ac42c-be97-4603-bc28-225b3e0bff15: Afbeelding2 # Afbeelding2
+    869e97c5-e745-4002-aa22-876a0ab833c6: titel2 # titel2
+    955e9fac-3a53-4cdb-a2dc-adf6ec33b4a2: cardtekst1 # cardtekst1
+    2250ad0c-8e5c-4167-afe0-e9fffb42197f: 'Contact Titel' # Contact Titel
+    9632beff-e61b-4270-8675-77dcfde1d40e: cardtitel3 # cardtitel3
+    69856e10-99a9-4a55-a17b-20962a29697d: Hoofdtekst # Hoofdtekst
+    401541cb-f28f-43a8-9ad1-1740e7c855ff: 'Contact Tekst' # Contact Tekst
+    547246a6-9ca7-4c8a-ba25-a7f5f7d4d49a: Hoofdbutton # Hoofdbutton
     ae5c8a44-7aad-44e3-bb2a-85d8b83ebf5a: startpagina # startpagina
+    b7db6fff-ee95-4591-a572-1d6f25cf3b25: cardtitel1 # cardtitel1
+    b997dfda-cd6c-4275-805e-34ff8e8feec2: cardtekst2 # cardtekst2
     bf6f36b8-d33d-42b1-9184-f0009c62d623: Hoofdtitel # Hoofdtitel
     c2f2127e-f0a9-4c4b-a158-b709d02cbef5: afbeeldingen # afbeeldingen
     cd90f7c3-4c21-4827-970f-dce47c74c709: 'Crystal Nexus' # Crystal Nexus

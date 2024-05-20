@@ -22,6 +22,6 @@ siteSettings:
   2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
     enabledByDefault: true
     hasUrls: true
-    template: startpagina/_entry
-    uriFormat: startpagina
+    template: index.twig
+    uriFormat: __home__
 type: single
