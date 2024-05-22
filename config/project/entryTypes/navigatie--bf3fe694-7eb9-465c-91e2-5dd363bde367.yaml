@@ -1,0 +1,95 @@
+color: null
+fieldLayouts:
+  6a11f1ce-a141-466f-926a-779c6a982178:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5cf4fb0d-4c1b-43a2-9f78-220da5444ade
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f0f391df-bbc7-4547-a622-735b69445046 # logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46bd904f-2b52-4932-bffa-1b80cdd89499
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 955e9fac-3a53-4cdb-a2dc-adf6ec33b4a2 # cardtekst1
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0361fb90-f82b-4768-a19e-281374068b6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b997dfda-cd6c-4275-805e-34ff8e8feec2 # cardtekst2
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6863194e-75a2-4cce-9f36-e10651ec2015
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 970c1c7b-e50d-423c-87bb-4fb1259a04b1
+        userCondition: null
+handle: navigatie
+hasTitleField: true
+icon: ''
+name: Navigatie
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

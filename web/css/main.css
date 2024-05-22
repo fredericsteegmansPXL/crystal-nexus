@@ -1,0 +1,1523 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*_____FONDS/ALGEMEEN START_____*/
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  color: #0a333e;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+label, p, a {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: radial-gradient(#061a1f, #1A1A1A);
+  animation: gradientAnimation 5s infinite alternate;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 6px;
+  background-color: #1A1A1A;
+}
+
+body::-webkit-scrollbar-track {
+  background: #aec0b4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0a333e;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/*_____FONDS/ALGEMEEN EINDE_____*/
+/*________NAV START________*/
+.main__nav {
+  background-color: transparent;
+  color: #ffffff;
+}
+.main__nav .nav__item {
+  color: #ffffff;
+}
+.main__nav .brand .toggle-icon {
+  font-size: 45px;
+}
+@media (min-width: 1025px) {
+  .main__nav .nav__item i {
+    font-size: 20px;
+  }
+}
+
+/*________NAV EINDE________*/
+/*________LOGIN START________*/
+.login h1 {
+  font-size: 30px;
+}
+.login__links {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #5f8688;
+}
+.login__links .login__gegevens__adres__tekst, .login__links .login__gegevens__wachtwoord__tekst {
+  font-size: 16px;
+}
+.login__links .login__gegevens .login__radio__forgot label, .login__links .login__gegevens .login__radio__forgot a {
+  font-size: 16px;
+}
+.login__links .login__signin__more i {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 5px;
+}
+.login__links .login__sumbit button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+.login__links .login__sumbit button:hover {
+  background-color: #061a1f;
+}
+.login .signin__rechts {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url("../../Web_Expert_PE2-main/src/assets/images/abstract_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.login .signin__rechts h1 {
+  font-size: 30px;
+  color: #aec0b4;
+}
+.login .signin__rechts input {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.login .signin__rechts p {
+  color: #aec0b4;
+  font-size: 16px;
+}
+.login .signin__rechts button {
+  background-color: #aec0b4;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #000000;
+}
+.login .signin__rechts button:hover {
+  background-color: #061a1f;
+}
+
+/*________LOGIN EINDE________*/
+/*________SIGNUP START________*/
+.signup__form p {
+  color: #aec0b4;
+  font-size: 16px;
+}
+.signup__form__formulier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup__form__formulier label {
+  margin-right: 10px;
+}
+.signup__form__formulier input {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.signup__form__formulier button {
+  background-color: #aec0b4;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+}
+.signup__form__formulier button:hover {
+  background-color: #5f8688;
+}
+
+/*________SIGNUP EINDE________*/
+/*________POP UP START________*/
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 999;
+}
+
+.popup__content {
+  text-align: center;
+}
+
+.popup__content p {
+  color: #0a333e;
+  margin: 10px;
+}
+
+.popup__content button {
+  background-color: #0a333e;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/*________POP UP EINDE________*/
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
+.product__header {
+  /*________search/filter gegevens start________*/
+}
+.product__header h1 {
+  color: #aec0b4;
+}
+.product__header p {
+  color: #ffffff;
+}
+.product__header .product__search__bar input {
+  border: 1px solid #aec0b4;
+  border-radius: 4px 0 0 4px;
+}
+.product__header .product__search__bar button {
+  background-color: #0a333e;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product__header .product__search__bar button:hover {
+  background-color: #061a1f;
+}
+
+.product__filter .filter__option {
+  transition: background-color 0.3s;
+  background-color: #5f8688;
+  border-radius: 4px;
+}
+.product__filter .filter__option:hover {
+  background-color: #0a333e;
+  color: #aec0b4;
+}
+
+/*________product cards gegevens________*/
+.card__title {
+  color: #aec0b4;
+}
+.card__description {
+  color: #ffffff;
+}
+.card__details p {
+  font-weight: bold;
+  color: #aec0b4;
+}
+.card__details button {
+  background-color: #aec0b4;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+  color: #061a1f;
+}
+.card__details button:hover {
+  background-color: #5f8688;
+}
+
+/*________pagination gegevens________*/
+.pagination a {
+  display: block;
+  text-decoration: none;
+  color: #061a1f;
+  background-color: #aec0b4;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.pagination a.active {
+  background-color: #5f8688;
+  color: #ffffff;
+}
+.pagination a:hover {
+  background-color: #5f8688;
+}
+
+/*________PRODUCT EINDE________*/
+/*________BEVESTIGINGSPAGINA START________*/
+.bevestigings__pagina {
+  padding: 20px;
+}
+
+.bestelde__artikelen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.besteld__artikel {
+  display: flex;
+  margin: 25px;
+}
+
+.besteld__artikel img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.product__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.volledige__totale__prijs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*________BEVESTIGINGSPAGINA EINDE________*/
+/*________PRODUCT DETAIL________*/
+.detail__layout {
+  background-color: #5f8688;
+  border-radius: 4px;
+}
+.detail__layout .detail__layout__tekst__Reviews__sectie {
+  margin-top: 15px;
+}
+.detail__layout__foto {
+  background-color: #0a333e;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1800px) {
+  .detail__layout__tekst {
+    font-size: 18px;
+  }
+}
+.detail__layout__tekst__stars i, .detail__layout__tekst__stars p {
+  color: #061a1f;
+}
+.detail__layout__tekst__info .aanwezigheid {
+  color: darkgreen;
+  font-size: 16px;
+}
+.detail__layout__tekst__info h2 {
+  font-size: 45px;
+}
+.detail__layout__tekst__options a {
+  text-decoration: none;
+  color: #000000;
+  border-right: 1px solid black;
+}
+.detail__layout__tekst__options a:last-child {
+  border-right: none;
+}
+.detail__layout__tekst__options a:first-child {
+  font-weight: 600;
+}
+.detail__layout__tekst__options a:hover,
+.detail__layout__tekst__options a:first-child:active {
+  font-weight: 600;
+}
+.detail__layout__tekst__buttons button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.detail__layout__tekst__buttons button:hover {
+  background-color: #061a1f;
+}
+.detail__layout__tekst .quantityDropdown {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+/*________PRODUCT DETAIL EINDE________*/
+/*________WINKELMANDJE START________*/
+.winkelmandje {
+  display: flex;
+  justify-content: center;
+  margin: 50px 50px;
+}
+.winkelmandje__product__sectie {
+  color: #ffffff;
+  margin-right: 50px;
+}
+.winkelmandje__product__sectie h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.winkelmandje__product__sectie__artikelen {
+  display: flex;
+  flex-direction: row;
+  background-color: #5f8688;
+  width: 1000px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.winkelmandje__product__sectie__artikelen img {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+.winkelmandje__product__sectie__artikelen .deel__1 h2 {
+  margin-top: 25px;
+}
+.winkelmandje__product__sectie__artikelen .deel__1 p {
+  width: 75%;
+}
+.winkelmandje__product__sectie__artikelen .deel__1 button {
+  background-color: #0a333e;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.winkelmandje__product__sectie__artikelen .deel__1 .aftellen {
+  margin: 10px 10px 10px 0;
+}
+.winkelmandje__product__sectie__artikelen .deel__1 .optellen {
+  margin: 10px;
+}
+.winkelmandje__product__sectie__artikelen .deel__2 {
+  margin: 25px;
+  width: 25%;
+}
+.winkelmandje__product__sectie__artikelen .break {
+  border-bottom: #000000 2px solid;
+}
+.winkelmandje__product__sectie__artikelen .totaal {
+  margin: 10px;
+}
+.winkelmandje__product__sectie .product__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.winkelmandje__product__sectie .product__item .product__image {
+  margin-right: 20px;
+}
+.winkelmandje__product__sectie .product__item .product__details {
+  flex: 1;
+}
+.winkelmandje__product__sectie .product__item .product__price {
+  margin-left: auto;
+}
+.winkelmandje__product__checkout {
+  justify-content: center;
+  color: #ffffff;
+}
+.winkelmandje__product__checkout .border {
+  background-color: #aec0b4;
+  padding: 30px;
+  border-radius: 4px;
+}
+.winkelmandje__product__checkout h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.winkelmandje__product__checkout li {
+  margin: 10px 10px 10px 0;
+}
+.winkelmandje__product__checkout button {
+  background-color: #0a333e;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/*________WINKELMANDJE EINDE________*/
+/*________CHECKOUT START________*/
+h1 {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.checkout__view {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.checkout__view h1 {
+  color: #ffffff;
+  margin: 25px;
+}
+.checkout__view h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.checkout__view .flex__input__group {
+  display: flex;
+}
+.checkout__view .flex__input__group .input__group {
+  margin-right: 25px;
+}
+.checkout__view .input__group {
+  margin-bottom: 30px;
+}
+.checkout__view .input__group label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 0.5em;
+}
+.checkout__view .input__group input {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.checkout__view .input__group #nummer {
+  width: 20%;
+}
+.checkout__view .input__group #postcode {
+  width: 10%;
+}
+.checkout__view button {
+  background-color: #aec0b4;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  color: #061a1f;
+}
+.checkout__view button:hover {
+  background-color: #5f8688;
+}
+.checkout__view .winkelmandje__producten__rechts {
+  margin-top: 20px;
+}
+.checkout__view .winkelmandje__producten__rechts h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.checkout__view .winkelmandje__producten__rechts .winkelmandje__item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.checkout__view .winkelmandje__producten__rechts .winkelmandje__item:last-child {
+  border-bottom: 2px solid #ffffff;
+}
+.checkout__view .winkelmandje__producten__rechts .winkelmandje__item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.checkout__view .winkelmandje__producten__rechts .winkelmandje__item p {
+  margin: 0;
+}
+.checkout__view .winkelmandje__producten__rechts .winkelmandje__item .product__details {
+  display: flex;
+  flex-direction: column;
+}
+.checkout__view .winkelmandje__producten__rechts .winkelmandje__item .product__details p {
+  margin-top: 10px;
+}
+.checkout__view .winkelmandje__producten__prijs {
+  margin-top: 40px;
+}
+
+/*________CHECKOUT EINDE________*/
+/*________INDEX START________*/
+.index__header__links h1 {
+  color: #aec0b4;
+  font-size: 55px;
+}
+.index__header__links p {
+  color: #ffffff;
+}
+.index__header__links button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__header__links button:hover {
+  background-color: #061a1f;
+}
+
+@media (max-width: 1200px) {
+  .index__header h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .index__header__links h1 {
+    font-size: 24px;
+  }
+}
+/* kijker start*/
+.index__kijker__rechts h1 {
+  color: #aec0b4;
+  font-size: 55px;
+}
+.index__kijker__rechts p {
+  color: #ffffff;
+}
+.index__kijker__rechts button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__kijker__rechts button:hover {
+  background-color: #061a1f;
+}
+
+@media (max-width: 768px) {
+  .index__kijker h1 {
+    font-size: 24px;
+  }
+}
+/* index cards */
+.index__card h1 {
+  color: #aec0b4;
+  font-size: 45px;
+}
+.index__card__rotate__special {
+  background-color: #5f8688;
+  border-radius: 10px;
+}
+.index__card__rotate__special h2 {
+  font-size: 30px;
+}
+
+/* CONTACT CARTS */
+.index__contact__rechts h1 {
+  color: #aec0b4;
+}
+.index__contact__rechts p {
+  color: #ffffff;
+}
+.index__contact__rechts button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index__contact__rechts button:hover {
+  background-color: #061a1f;
+}
+
+@media (max-width: 768px) {
+  .index__card h1 {
+    font-size: 24px;
+  }
+}
+/*________INDEX EINDE________*/
+/*________FOOTER START________*/
+.footer {
+  background-color: #5f8688;
+}
+@media (max-width: 767px) {
+  .footer .footer__titel {
+    font-size: 24px;
+  }
+  .footer .footer__tekst {
+    font-size: 14px;
+  }
+  .footer .footer__kleinTekst {
+    font-size: 10px;
+  }
+  .footer button {
+    background-color: #0a333e;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+.footer__section__contact button {
+  background-color: #0a333e;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.footer__section__contact button:hover {
+  background-color: #061a1f;
+}
+.footer__section .footer__titel {
+  font-size: 20px;
+}
+.footer__section .footer__tekst {
+  font-size: 18px;
+}
+.footer__copy-right {
+  border-top: 1px solid #061a1f;
+  background-color: #5f8688;
+}
+
+/*________FOOTER EINDE________*/
+/*-------- NAV START --------*/
+.main__nav {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-top: 5px;
+}
+.main__nav .brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.main__nav .brand .toggle-icon {
+  cursor: pointer;
+}
+.main__nav .nav__item {
+  padding: 10px;
+  display: none;
+}
+.main__nav .nav__item.show {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .main__nav {
+    flex-direction: row;
+  }
+  .main__nav .brand {
+    display: block;
+  }
+  .main__nav .nav__item:nth-child(2) {
+    margin-left: auto;
+  }
+  .main__nav .nav__item:nth-child(4) {
+    margin-left: 20px;
+  }
+  .main__nav .nav__item {
+    display: block;
+  }
+  .main__nav .toggle-icon {
+    display: none;
+  }
+}
+
+/*-------- NAV END --------*/
+/*-------- LOG IN START--------*/
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+  margin: 10% auto 20%;
+}
+.login .login__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 1200px) {
+  .login .login__layout {
+    flex-direction: column-reverse;
+  }
+  .login .login__layout .login__links,
+  .login .login__layout .signin__rechts {
+    flex: 1;
+    border-radius: 20px;
+  }
+}
+.login .login__layout .login__links {
+  flex: 2;
+  flex-direction: column;
+  padding: 35px;
+}
+.login .login__layout .login__links .login__radio__forgot a {
+  margin-left: 35px;
+}
+.login .login__layout .login__links h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.login .login__layout .login__links .login__gegevens__adres__kader {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.login .login__layout .login__links .login__gegevens__wachtwoord__kader {
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.login .login__layout .login__links .login__gegevens .login__sumbit {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.login .login__layout .login__links .login__gegevens .login__sumbit button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+.login .login__layout .login__links .login__gegevens .login__signin__more i {
+  padding-top: 5px;
+  margin-right: 10px;
+}
+.login .login__layout .signin__rechts {
+  flex: 1.5;
+  flex-direction: column;
+  padding: 35px;
+}
+.login .login__layout .signin__rechts h1 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.login .login__layout .signin__rechts .signin__sumbit {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.login .login__layout .signin__rechts .signin__sumbit button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .login .login__layout .login__links,
+  .login .login__layout .signin__rechts {
+    flex: 1;
+  }
+  .login .login__layout .login {
+    width: 100%;
+  }
+}
+
+/*________LOGIN EINDE________*/
+/*________PRODUCT START________*/
+/*________product header gegevens start________*/
+.product__header {
+  height: 100px;
+  padding: 30px 15px 15px 15px;
+  text-align: center;
+}
+.product__header h1 {
+  margin-bottom: 10px;
+}
+
+/*________search/filter gegevens start________*/
+.product__search {
+  padding: 20px;
+  text-align: center;
+}
+.product__search .product__layout {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.product__search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product__search__bar input {
+  padding: 10px;
+  width: 70%;
+}
+.product__search__bar button {
+  padding: 10px 12px;
+}
+.product__search .product__filter {
+  margin-top: 20px;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.product__search .product__filter .filter__option {
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/*________product cards gegevens start________*/
+.card__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .card__layout {
+    flex-wrap: wrap;
+  }
+  .card__layout .card {
+    width: 90%;
+    margin: 0 0 30px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card__layout {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card__layout .card {
+    width: 30%;
+    margin: 0 0 20px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .card__layout {
+    flex-wrap: wrap;
+  }
+  .card__layout .card {
+    width: 23%;
+  }
+}
+
+.card {
+  width: 20%;
+  height: auto;
+  margin: 25px 0 20px 0;
+  padding: 20px 5px 20px 5px;
+}
+.card__image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.card__content {
+  padding: 15px;
+  text-align: center;
+}
+.card__title {
+  margin-bottom: 10px;
+}
+.card__details {
+  text-align: center;
+}
+.card__details p {
+  margin-bottom: 15px;
+}
+.card__details button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/*________pagination gegevens start________*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.pagination ul li {
+  margin: 0 5px;
+}
+.pagination ul a {
+  padding: 4px 8px;
+}
+
+/*________PRODUCT EINDE________*/
+/*________PRODUCT DETAIL________*/
+.detail {
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+}
+.detail h1 {
+  justify-content: start;
+}
+.detail__layout {
+  display: flex;
+  width: 65%;
+  height: 65%;
+  margin: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .detail__layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail__layout .detail__layout__foto {
+    width: 100%;
+    margin: 0;
+  }
+  .detail__layout .detail__layout__tekst {
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .detail__layout {
+    flex-direction: row;
+  }
+  .detail__layout__tekst {
+    width: 30%;
+    margin-top: 0;
+  }
+  .detail__layout__foto {
+    width: 70%;
+    margin: 0;
+  }
+}
+.detail__layout__foto {
+  width: 60%;
+  padding: 10px;
+  margin: 0 15px 0 0;
+  position: relative;
+}
+.detail__layout__foto img {
+  width: 100%;
+  height: auto;
+}
+.detail__layout__aanzichten {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.detail__layout__aanzichten img {
+  width: 20%;
+  height: auto;
+  margin: 0 5px 10px;
+}
+.detail__layout__tekst {
+  width: 70%;
+  align-self: flex-start;
+  margin-top: 20px;
+  flex: 1;
+}
+.detail__layout__tekst__stars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.detail__layout__tekst__stars i {
+  margin-left: 5px;
+}
+.detail__layout__tekst__stars p {
+  margin-left: 10px;
+}
+.detail__layout__tekst__info h1 {
+  margin-top: 20px;
+}
+.detail__layout__tekst__info p {
+  margin-top: 5px;
+}
+.detail__layout__tekst__options {
+  margin: 20px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+.detail__layout__tekst__options p {
+  margin: 0 20px 0 0;
+  padding: 0 10px 0 0;
+}
+.detail__layout__tekst__About p {
+  margin-top: 20px;
+}
+.detail__layout__tekst__buttons button {
+  background-color: #0a333e;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+.detail__layout__tekst__buttons button:last-child {
+  margin-left: 2px;
+}
+.detail__layout__tekst .quantityDropdown {
+  background-color: #0a333e;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/*________PRODUCT DETAIL EINDE________*/
+/*________WINKELMANDJE START________*/
+.shopping__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*________WINKELMANDJE EINDE________*/
+/*________INDEX START________*/
+.index__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 75px;
+}
+.index__header__links {
+  flex-direction: column;
+  flex-basis: 40%;
+}
+.index__header__links h1 {
+  margin-bottom: 10px;
+}
+.index__header__links button {
+  width: 40%;
+  padding: 12px;
+  margin-top: 35px;
+  border: none;
+  cursor: pointer;
+}
+.index__header__rechts {
+  flex-direction: column;
+  flex-basis: 40%;
+}
+.index__header__rechts img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .index__header {
+    text-align: center;
+    flex-direction: column;
+  }
+  .index__header__links {
+    width: 70%;
+  }
+  .index__header__rechts img {
+    margin-top: 25px;
+  }
+  .index__header img {
+    width: 50%;
+  }
+}
+/* Basisstijlen voor de kijker start */
+.index__kijker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 20px 20px 20px;
+  padding: 20px;
+}
+.index__kijker__links__2 {
+  flex-basis: 5%;
+}
+.index__kijker__links {
+  flex-basis: 25%;
+  text-align: center;
+}
+.index__kijker__links img {
+  margin-right: 50px;
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+.index__kijker__links button {
+  background-color: #0a333e;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+.index__kijker__rechts {
+  flex-basis: 25%;
+}
+.index__kijker__rechts h1 {
+  margin-bottom: 20px;
+  justify-content: start;
+}
+.index__kijker__rechts button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .index__kijker {
+    flex-direction: column;
+  }
+  .index__kijker button {
+    width: 20%;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .index__kijker img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* index cards */
+.index__card {
+  margin-top: 30px;
+}
+.index__card h1 {
+  text-align: center;
+  margin: 25px 10px 15px 10px;
+}
+.index__card h2 {
+  margin: 0 0 20px 0;
+}
+.index__card__rotate {
+  display: flex;
+  justify-content: center;
+}
+.index__card__rotate__special:nth-child(1) {
+  width: 25%;
+  height: 350px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: rotate(2deg);
+}
+.index__card__rotate__special:nth-child(1):hover {
+  transform: scale(1.05);
+  background-color: #aec0b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.index__card__rotate__special:nth-child(1):hover p {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(1):hover h2 {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(2) {
+  width: 25%;
+  height: 350px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: rotate(5deg);
+}
+.index__card__rotate__special:nth-child(2):hover {
+  transform: scale(1.05);
+  background-color: #aec0b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.index__card__rotate__special:nth-child(2):hover p {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(2):hover h2 {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(3) {
+  width: 25%;
+  height: 350px;
+  border: none;
+  margin: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: rotate(-10deg);
+}
+.index__card__rotate__special:nth-child(3):hover {
+  transform: scale(1.05);
+  background-color: #aec0b4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.index__card__rotate__special:nth-child(3):hover p {
+  color: #061a1f;
+}
+.index__card__rotate__special:nth-child(3):hover h2 {
+  color: #061a1f;
+}
+@media (max-width: 1200px) {
+  .index__card .index__card__rotate {
+    justify-content: center;
+    margin: 25px;
+  }
+  .index__card .index__card__rotate__special {
+    width: 41%;
+  }
+}
+@media (max-width: 768px) {
+  .index__card .index__card__rotate {
+    flex-direction: column;
+    align-items: center;
+  }
+  .index__card .index__card__rotate__special {
+    width: 60%;
+  }
+}
+
+/* contact cards */
+.index__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 100px 30px 100px;
+  height: 45vh;
+}
+.index__contact__links {
+  flex-basis: 30%;
+  text-align: center;
+  margin: 25px;
+}
+.index__contact__links img {
+  width: 75%;
+  height: auto;
+}
+.index__contact__links img:hover {
+  transform: scale(1.25);
+}
+.index__contact__rechts {
+  flex-basis: 40%;
+}
+.index__contact__rechts h1 {
+  margin-bottom: 20px;
+  justify-content: start;
+}
+.index__contact__rechts button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 35px;
+}
+@media (max-width: 1200px) {
+  .index__contact {
+    flex-direction: column;
+  }
+  .index__contact__rechts {
+    order: -1;
+    text-align: center;
+  }
+  .index__contact__links img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .index__contact {
+    margin: 30px;
+  }
+  .index__contact__links img {
+    display: none;
+  }
+  .index__contact button {
+    width: 20%;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/*________INDEX EINDE________*/
+/*________FOOTER START________*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.footer__section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+.footer__section__contact button {
+  background-color: #0a333e;
+  color: #ffffff;
+  width: 60%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+}
+.footer__section__links img {
+  max-width: 80%;
+  height: auto;
+}
+.footer__section__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__copy-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .footer__section {
+    flex: 1 100%;
+  }
+  .footer__section__links, .footer__section__products, .footer__section__contact {
+    order: 1;
+  }
+  .footer__section button {
+    width: 50%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .footer__section img {
+    width: 50%;
+  }
+}
+
+/*________FOOTER EINDE________*/
+
+/*# sourceMappingURL=main.css.map */

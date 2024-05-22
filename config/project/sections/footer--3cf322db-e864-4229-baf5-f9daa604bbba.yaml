@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - d19047cb-eb46-4120-b805-1c25ffb1cfd8 # Footer
+handle: footer
+maxAuthors: 1
+name: Footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
+    enabledByDefault: true
+    hasUrls: true
+    template: snippets/_footer.twig
+    uriFormat: footer
+type: single

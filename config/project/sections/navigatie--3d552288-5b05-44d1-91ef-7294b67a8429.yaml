@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - bf3fe694-7eb9-465c-91e2-5dd363bde367 # Navigatie
+handle: navigatie
+maxAuthors: 1
+name: Navigatie
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
+    enabledByDefault: true
+    hasUrls: true
+    template: snippets/_nav.twig
+    uriFormat: navigatie
+type: single

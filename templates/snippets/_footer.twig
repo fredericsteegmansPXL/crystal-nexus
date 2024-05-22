@@ -1,15 +1,15 @@
 <div class="footer">
     <div class="footer__section footer__section__links">
-        <img :src="lvLogoExtendedFooter" :alt="lvLogoExtendedAltFooter">
+        <img src="{{ footer.logo }}" alt="{{ footer.logo }}">
     </div>
     <div class="footer__section footer__section__products">
-        <h2 class="footer__titel">{{ productNaamFooter }}</h2>
-        <router-link :to="{name:'producten'}"><p class="footer__tekst">{{  productArtikelFooter }}</p></router-link>
+        <h2 class="footer__titel">{{ footer.hoofdtitel }}</h2>
+        <a href=""><p class="footer__tekst">{{  footer.hoofdtekst }}</p></a>
     </div>
     <div class="footer__section footer__section__contact">
-        <h2 class="footer__titel">{{ contactNaamFooter }}</h2>
-        <p class="footer__tekst">{{ contactTekstFooter }}</p>
-        <button>{{ contactButtonTekstFooter }}</button>
+        <h2 class="footer__titel">{{ footer.contactTitel }}</h2>
+        <p class="footer__tekst">{{ footer.contactTekst }}</p>
+        <button>{{ footer.contactButton }}</button>
     </div>
 </div>
-<div class="footer__copy-right">&copy {{ copyRightFooter }}</div>
+<div class="footer__copy-right">&copy {{ footer.copyRightFooter }}</div>

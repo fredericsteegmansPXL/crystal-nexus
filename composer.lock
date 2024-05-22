@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bf13ad21b51e65cbc0d53dd656465a8",
+    "content-hash": "b01e3da9906b968f44290d653481999c",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -3447,6 +3447,72 @@
                 }
             ],
             "time": "2024-03-30T18:03:49+00:00"
+        },
+        {
+            "name": "studioespresso/craft-navigate",
+            "version": "5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studioespresso/craft-navigate.git",
+                "reference": "1a48c723c4e0d0d9a0d86f0e947768d32e2734d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studioespresso/craft-navigate/zipball/1a48c723c4e0d0d9a0d86f0e947768d32e2734d4",
+                "reference": "1a48c723c4e0d0d9a0d86f0e947768d32e2734d4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.1.0"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Navigate",
+                "handle": "navigate",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/studioespresso/craft-navigate/v5/CHANGELOG.md",
+                "components": {
+                    "navigate": "studioespresso\\navigate\\services\\NavigateService",
+                    "nodes": "studioespresso\\navigate\\services\\NodesService"
+                },
+                "class": "studioespresso\\navigate\\Navigate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "studioespresso\\navigate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Studio Espresso",
+                    "homepage": "https://www.studioespresso.co"
+                }
+            ],
+            "description": "Navigation plugin for Craft CMS",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "menus",
+                "navigate",
+                "navigation"
+            ],
+            "support": {
+                "docs": "https://github.com/studioespresso/craft-navigate/blob/v5/README.md",
+                "issues": "https://github.com/studioespresso/craft-navigate/issues",
+                "source": "https://github.com/studioespresso/craft-navigate/tree/5.1.2"
+            },
+            "time": "2024-05-16T18:22:59+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

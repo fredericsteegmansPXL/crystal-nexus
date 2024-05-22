@@ -1,4 +1,4 @@
-dateModified: 1716147896
+dateModified: 1716399533
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
@@ -17,9 +17,12 @@ meta:
     2ab87770-18f6-4aa4-a8b7-98c122dd4a1a: cardtitel2 # cardtitel2
     2e7d7668-a91d-4a34-a51a-8f30daf55386: 'Crystal Nexus' # Crystal Nexus
     2f9a4255-b8ae-40ea-8649-cf456b33e30c: 'Contact Button' # Contact Button
+    3cf322db-e864-4229-baf5-f9daa604bbba: Footer # Footer
+    3d552288-5b05-44d1-91ef-7294b67a8429: Navigatie # Navigatie
     5ba78f2e-e30c-4756-9ab8-1cb8ea1ea5f2: 'Hero Image' # Hero Image
     6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
     61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
+    555ca832-9168-4855-9612-5e513d78c745: 'Copy right footer' # Copy right footer
     797ac42c-be97-4603-bc28-225b3e0bff15: Afbeelding2 # Afbeelding2
     869e97c5-e745-4002-aa22-876a0ab833c6: titel2 # titel2
     955e9fac-3a53-4cdb-a2dc-adf6ec33b4a2: cardtekst1 # cardtekst1
@@ -31,9 +34,19 @@ meta:
     ae5c8a44-7aad-44e3-bb2a-85d8b83ebf5a: startpagina # startpagina
     b7db6fff-ee95-4591-a572-1d6f25cf3b25: cardtitel1 # cardtitel1
     b997dfda-cd6c-4275-805e-34ff8e8feec2: cardtekst2 # cardtekst2
+    bf3fe694-7eb9-465c-91e2-5dd363bde367: Navigatie # Navigatie
     bf6f36b8-d33d-42b1-9184-f0009c62d623: Hoofdtitel # Hoofdtitel
     c2f2127e-f0a9-4c4b-a158-b709d02cbef5: afbeeldingen # afbeeldingen
     cd90f7c3-4c21-4827-970f-dce47c74c709: 'Crystal Nexus' # Crystal Nexus
+    d19047cb-eb46-4120-b805-1c25ffb1cfd8: Footer # Footer
+    e49f55a8-262d-4bf4-b77b-04b459ecbde4: 'Title 2' # Title 2
+    f0f391df-bbc7-4547-a622-735b69445046: logo # logo
+plugins:
+  navigate:
+    edition: standard
+    enabled: true
+    licenseKey: EXMT68M3YWBRLDI129JZ2AGZ
+    schemaVersion: 2.4.0
 system:
   edition: solo
   live: true
