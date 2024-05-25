@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 19435fd5-36eb-421a-9af3-53b45b5eba58 # Producten
+handle: producten
+maxAuthors: 1
+name: Producten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
+    enabledByDefault: true
+    hasUrls: true
+    template: _products.twig
+    uriFormat: 'producten/{slug}'
+structure:
+  maxLevels: null
+  uid: 1c2d0da6-e8ce-46d4-b7ab-42badfb21727
+type: structure

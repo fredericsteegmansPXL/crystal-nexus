@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  573827ad-04e2-4ddf-8c3e-e983a62b82d0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 89cfe14e-79b4-4e8c-82f5-c90d45386b46
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fb26f7c7-13a1-4c5c-8cc8-3daeb1f94530
+        userCondition: null
+handle: contact
+hasTitleField: true
+icon: ''
+name: contact
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

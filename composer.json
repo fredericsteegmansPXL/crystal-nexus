@@ -3,6 +3,7 @@
   "prefer-stable": true,
   "require": {
     "craftcms/cms": "^5.0.0",
+    "solspace/craft-freeform": "^5.2.1",
     "studioespresso/craft-navigate": "^5.1.2",
     "vlucas/phpdotenv": "^5.4.0"
   },
