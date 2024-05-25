@@ -1,6 +1,121 @@
 {% extends "_layout.twig" %}
 {% block content %}
-<body  id="achtergrond2">
-<h1>producten</h1>
-</body>
+    <body  id="achtergrond2">
+    <div class="product__header">
+        <div class="product__top">
+            <h1>Kristallen shop</h1>
+            <p>Onze winkel heeft een variatie aan verschillende soorten kristallen. Voor iedereen zit er wel een steentje tussen.</p>
+        </div>
+    </div>
+
+    <!--search-->
+    <div class="product__search">
+        <div class="product__layout">
+            <div class="product__search__bar">
+                <input type="text" placeholder="Zoeken..." id="zoektekst">
+                <button onclick="filterProducten()"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- filteropties -->
+            <div class="product__filter">
+                <span class="filter__option" onclick="filterByPrice('dure')">Dure producten</span>
+                <span class="filter__option" onclick="filterByPrice('goedkoop')">Goedkopere producten</span>
+                <span class="filter__option" onclick="filterByPrice('gemiddeld')">Gemiddelde producten</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="productenContainer" class="producten__container">
+        <!-- Product cards worden hier ingevoegd via JavaScript -->
+    </div>
+
+    <!--pagination-->
+    <div class="pagination" id="pagination" style="display: none;">
+        <ul id="paginationList">
+            <!-- Pagina nummers worden hier ingevoegd via JavaScript -->
+        </ul>
+    </div>
+
+    </body>
+
+    <script>
+        // JSON-data vervangen door harde code
+        const producten = [
+            { titel: "Product 1", prijs: 25 },
+            { titel: "Product 2", prijs: 15 },
+            { titel: "Product 3", prijs: 20 },
+            { titel: "Product 4", prijs: 30 },
+            { titel: "Product 5", prijs: 10 },
+            { titel: "Product 6", prijs: 22 },
+            { titel: "Product 7", prijs: 18 },
+            { titel: "Product 8", prijs: 28 },
+            { titel: "Product 9", prijs: 16 },
+            { titel: "Product 10", prijs: 23 }
+        ];
+
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        let filteredProducts = producten;
+
+        function filterProducten() {
+            const zoektekst = document.getElementById('zoektekst').value.toLowerCase();
+            filteredProducts = producten.filter(product => product.titel.toLowerCase().includes(zoektekst));
+            renderProducts();
+        }
+
+        function filterByPrice(type) {
+            if (type === 'dure') {
+                filteredProducts = producten.filter(product => product.prijs > 23);
+            } else if (type === 'goedkoop') {
+                filteredProducts = producten.filter(product => product.prijs < 17);
+            } else if (type === 'gemiddeld') {
+                filteredProducts = producten.filter(product => product.prijs >= 17 && product.prijs <= 23);
+            }
+            renderProducts();
+        }
+
+        function renderProducts() {
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, filteredProducts.length);
+
+            const productenContainer = document.getElementById('productenContainer');
+            productenContainer.innerHTML = '';
+
+            for (let i = startIndex; i < endIndex; i++) {
+                const product = filteredProducts[i];
+                const productCard = `<div class="product__card">
+                            <h2>${product.titel}</h2>
+                            <p>Prijs: ${product.prijs}</p>
+                          </div>`;
+                productenContainer.innerHTML += productCard;
+            }
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+            const paginationList = document.getElementById('paginationList');
+            paginationList.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="#" onclick="changePage(${i})">${i}</a>`;
+                if (i === currentPage) {
+                    li.querySelector('a').classList.add('active');
+                }
+                paginationList.appendChild(li);
+            }
+
+            const pagination = document.getElementById('pagination');
+            pagination.style.display = totalPages > 1 ? 'block' : 'none';
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            renderProducts();
+        }
+
+        // Eerste keer renderen
+        renderProducts();
+    </script>
 {% endblock %}
