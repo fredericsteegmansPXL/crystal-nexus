@@ -1,4 +1,4 @@
-dateModified: 1716401370
+dateModified: 1716820901
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
@@ -13,15 +13,23 @@ fs:
     url: /files
 meta:
   __names__:
+    0a66b604-abf7-48be-9dfe-f220f4ee199a: New # New
     0d5adc84-159d-4815-a7b0-209aff3e442f: Afbeelding # Afbeelding
+    0d7dfe2d-310e-4fea-9f66-c6e282e4993f: Gewicht # Gewicht
+    1ffba4ab-c9f8-4a5f-b520-7a229cda520b: stock # stock
     2ab87770-18f6-4aa4-a8b7-98c122dd4a1a: cardtitel2 # cardtitel2
     2e7d7668-a91d-4a34-a51a-8f30daf55386: 'Crystal Nexus' # Crystal Nexus
     2f9a4255-b8ae-40ea-8649-cf456b33e30c: 'Contact Button' # Contact Button
     3cf322db-e864-4229-baf5-f9daa604bbba: Footer # Footer
     3d552288-5b05-44d1-91ef-7294b67a8429: Navigatie # Navigatie
     5ba78f2e-e30c-4756-9ab8-1cb8ea1ea5f2: 'Hero Image' # Hero Image
+    6cbe8dec-fe9a-49c5-95fb-82362b801659: Simple # Simple
     6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
+    29e36a7f-5420-4e52-a330-a37feb1b1cfa: Afmeeting # Afmeeting
+    35b337a2-b0ef-4b17-89f4-86e525f0372b: detailbutton # detailbutton
     61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
+    68c3afc7-d5cb-4434-9310-67d5cc0b7bef: Kleur # Kleur
+    388c5095-fdc4-451f-b7ef-b3768792f64c: Prijs # Prijs
     555ca832-9168-4855-9612-5e513d78c745: 'Copy right footer' # Copy right footer
     728cc3a1-fbd8-42aa-aefa-36586c81993b: contact # contact
     797ac42c-be97-4603-bc28-225b3e0bff15: Afbeelding2 # Afbeelding2
@@ -34,6 +42,7 @@ meta:
     69856e10-99a9-4a55-a17b-20962a29697d: Hoofdtekst # Hoofdtekst
     401541cb-f28f-43a8-9ad1-1740e7c855ff: 'Contact Tekst' # Contact Tekst
     547246a6-9ca7-4c8a-ba25-a7f5f7d4d49a: Hoofdbutton # Hoofdbutton
+    a6c4fae1-87c1-46f5-890d-787336d58e12: Dummy # Dummy
     a13df83e-aa66-49d1-b6fa-4ea6fbaaece5: Producten # Producten
     ae5c8a44-7aad-44e3-bb2a-85d8b83ebf5a: startpagina # startpagina
     b7db6fff-ee95-4591-a572-1d6f25cf3b25: cardtitel1 # cardtitel1
@@ -45,7 +54,17 @@ meta:
     d19047cb-eb46-4120-b805-1c25ffb1cfd8: Footer # Footer
     e49f55a8-262d-4bf4-b77b-04b459ecbde4: 'Title 2' # Title 2
     f0f391df-bbc7-4547-a622-735b69445046: logo # logo
+    fbee1e6f-0741-4618-a29b-7c1cdd393c76: Primary # Primary
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  commerce:
+    edition: pro
+    enabled: true
+    licenseKey: H0CTDSLHE78EUZXXFD73WHJK
+    schemaVersion: 5.0.74
   freeform:
     edition: express
     enabled: true
@@ -56,7 +75,7 @@ plugins:
     licenseKey: EXMT68M3YWBRLDI129JZ2AGZ
     schemaVersion: 2.4.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Crystal Nexus'
   schemaVersion: 5.0.0.20

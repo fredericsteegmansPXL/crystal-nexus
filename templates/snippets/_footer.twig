@@ -1,8 +1,8 @@
-
+{% set footer = craft.entries.section("footer").one() %}
 
 <div class="footer">
     <div class="footer__section footer__section__links">
-        <img src="{{ footer.logo }}" alt="{{ footer.logo }}">
+        <img src="{{ footer.logo.one().url }}" alt="{{ footer.logo }}">
     </div>
     <div class="footer__section footer__section__products">
         <h2 class="footer__titel">{{ footer.hoofdtitel }}</h2>

@@ -6,6 +6,21 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            elementCondition: null
+            fieldUid: 0d5adc84-159d-4815-a7b0-209aff3e442f # Afbeelding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b90f1471-ed6a-4a43-ae88-aac9838eca86
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -31,6 +46,111 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 7c787aa1-8b96-4e74-8bdc-66dfe7ba3702
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 69856e10-99a9-4a55-a17b-20962a29697d # Hoofdtekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e9b6c1c-548b-43b9-8824-d4584aa7974d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 68c3afc7-d5cb-4434-9310-67d5cc0b7bef # Kleur
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa9a0135-852c-4a73-8a30-57bcc50ad3f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29e36a7f-5420-4e52-a330-a37feb1b1cfa # Afmeeting
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb3af445-9325-49d1-b17c-2084cd6e6592
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0d7dfe2d-310e-4fea-9f66-c6e282e4993f # Gewicht
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6448fbe9-5177-4008-9407-be1e3c365e7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 388c5095-fdc4-451f-b7ef-b3768792f64c # Prijs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9509414a-67ab-4f30-a8ae-fac518e0faec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 547246a6-9ca7-4c8a-ba25-a7f5f7d4d49a # Hoofdbutton
+            handle: hoofdbutton3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92b0ece6-1325-4f6a-ad3e-976c025e7e97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 35b337a2-b0ef-4b17-89f4-86e525f0372b # detailbutton
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71d99e2f-df01-40ec-9a6d-6cd77b539a99
             userCondition: null
             warning: null
             width: 100

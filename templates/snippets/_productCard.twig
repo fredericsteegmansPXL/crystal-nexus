@@ -1,6 +1,9 @@
 <div class="card__layout">
-    <div v-for="item in products" :key="item.id" class="card">
-        <img :src="item.afbeelding" :alt="item.titel" class="card__image">
+    <div class="card">
+        {% set sneakerImage = sneaker.image.one() %}
+        {%  if sneakerImage %}
+            <img src="{{ sneakerImage.url }}" alt="{{ sneakerImage.title }}" class="card-image">
+        {% endif %}
         <div class="card__content">
             <h2 class="card__title">{{ item.titel }}</h2>
             <p class="card__description">{{ item.omschrijving }}</p>
