@@ -1,15 +1,15 @@
 <div class="card__layout">
     <div class="card product__card">
-        {% set productImage = Producten.afbeelding.one() %}
+        {% set productImage = producten.afbeelding.one() %}
         {% if productImage %}
             <img src="{{ productImage.url }}" alt="{{ productImage.title }}" class="card-image">
         {% endif %}
         <div class="card__content">
-            <h2 class="card__title">{{ Producten.title }}</h2>
-            <p class="card__description">{{ Producten.hoofdtekst }}</p>
+            <h2 class="card__title">{{ producten.title }}</h2>
+            <p class="card__description">{{ producten.hoofdtekst }}</p>
         </div>
         <div class="card__details">
-            <p class="card__price">{{ '€' ~ Producten.prijs }}</p>
+            <p class="card__price">{{ '€' ~ producten.prijs }}</p>
         </div>
     </div>
 </div>
