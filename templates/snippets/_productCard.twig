@@ -1,16 +1,37 @@
 <div class="card__layout">
     <div class="card">
-        {% set sneakerImage = sneaker.image.one() %}
-        {%  if sneakerImage %}
-            <img src="{{ sneakerImage.url }}" alt="{{ sneakerImage.title }}" class="card-image">
+        {% set productImage = product.image.one() %}
+        {% if productImage %}
+            <img src="{{ productImage.url }}" alt="{{ productImage.title }}" class="card-image">
         {% endif %}
         <div class="card__content">
-            <h2 class="card__title">{{ item.titel }}</h2>
-            <p class="card__description">{{ item.omschrijving }}</p>
+            <h2 class="card__title">{{ product.title }}</h2>
+            <p class="card__description">{{ product.description }}</p>
         </div>
         <div class="card__details">
-            <p class="card__price">{{ '€' + item.prijs.toFixed(2) }}</p>
-            <button @click="viewProductDetail(item.id)" class="card__button">{{ bekijkMeer }}</button>
+            <p class="card__price">{{ '€' ~ product.price|number_format(2, ',', '.') }}</p>
+            <button onclick="viewProductDetail('{{ product.id }}')" class="card__button">Bekijk meer</button>
         </div>
     </div>
 </div>
+
+
+
+
+
+{#<div class="card__layout">#}
+{#    <div class="card">#}
+{#        {% set sneakerImage = sneaker.image.one() %}#}
+{#        {%  if sneakerImage %}#}
+{#            <img src="{{ sneakerImage.url }}" alt="{{ sneakerImage.title }}" class="card-image">#}
+{#        {% endif %}#}
+{#        <div class="card__content">#}
+{#            <h2 class="card__title">{{ item.titel }}</h2>#}
+{#            <p class="card__description">{{ item.omschrijving }}</p>#}
+{#        </div>#}
+{#        <div class="card__details">#}
+{#            <p class="card__price">{{ '€' + item.prijs.toFixed(2) }}</p>#}
+{#            <button @click="viewProductDetail(item.id)" class="card__button">{{ bekijkMeer }}</button>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
