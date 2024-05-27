@@ -25,9 +25,9 @@
         </div>
     </div>
 
-    <div id="productenContainer" class="producten__container">
+    <div>
         {% for product in craft.entries.section('producten').all() %}
-            {% include 'snippets/_productCard.twig' with { product: product } %}
+            {% include 'snippets/_productCard.twig' %}
         {% else %}
             <p>Geen producten gevonden.</p>
         {% endfor %}
