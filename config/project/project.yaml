@@ -1,4 +1,4 @@
-dateModified: 1716820901
+dateModified: 1716826442
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
@@ -16,6 +16,7 @@ meta:
     0a66b604-abf7-48be-9dfe-f220f4ee199a: New # New
     0d5adc84-159d-4815-a7b0-209aff3e442f: Afbeelding # Afbeelding
     0d7dfe2d-310e-4fea-9f66-c6e282e4993f: Gewicht # Gewicht
+    1a5c33b1-b040-4be0-a2d6-46739d21bb5a: 'product overzicht' # product overzicht
     1ffba4ab-c9f8-4a5f-b520-7a229cda520b: stock # stock
     2ab87770-18f6-4aa4-a8b7-98c122dd4a1a: cardtitel2 # cardtitel2
     2e7d7668-a91d-4a34-a51a-8f30daf55386: 'Crystal Nexus' # Crystal Nexus
@@ -29,6 +30,7 @@ meta:
     35b337a2-b0ef-4b17-89f4-86e525f0372b: detailbutton # detailbutton
     61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
     68c3afc7-d5cb-4434-9310-67d5cc0b7bef: Kleur # Kleur
+    70ec348f-2dcc-4486-8263-b7204a10e978: 'producten overzicht' # producten overzicht
     388c5095-fdc4-451f-b7ef-b3768792f64c: Prijs # Prijs
     555ca832-9168-4855-9612-5e513d78c745: 'Copy right footer' # Copy right footer
     728cc3a1-fbd8-42aa-aefa-36586c81993b: contact # contact
