@@ -1,7 +1,17 @@
-<div v-if="product" class="detail">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Product Detail</title>
+</head>
+<body>
+<div class="detail">
     <div class="detail__layout">
         <div class="detail__layout__foto">
-            <img :src="product.afbeelding" :alt="product.titel">
+            <img src="path/to/image.jpg" alt="Product Title">
         </div>
         <div class="detail__layout__tekst">
             <div class="detail__layout__tekst__stars">
@@ -10,53 +20,48 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <p>{{ reviews }}</p>
+                <p>5 reviews</p>
             </div>
             <div class="detail__layout__tekst__info">
-                <h1>{{ product.titel }}</h1>
-                <p>{{ product.omschrijving }}</p>
-                <p class="aanwezigheid">{{ product.hoeveelheid_voorraad > 0 ? `Aanwezig` : `Niet meer beschikbaar` }}</p>
-                <h2>{{ '€' + (product.prijs ? product.prijs.toFixed(2) : 'Niet aanwezig') }}</h2>
+                <h1>Product Title</h1>
+                <p>Product description goes here...</p>
+                <p class="aanwezigheid">Aanwezig</p>
+                <h2>€99.99</h2>
             </div>
 
             <div class="detail__layout__tekst__buttons">
                 <button type="button"><i class="fa-regular fa-heart"></i></button>
-                <select v-if="product.hoeveelheid_voorraad > 0" v-model="quantity" name="quantity" class="quantityDropdown">
-                    <option v-for="n in Math.min(product.hoeveelheid_voorraad, 5)" :value="n" :key="n">{{ n }}</option>
+                <select name="quantity" class="quantityDropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
-                <button v-if="product.hoeveelheid_voorraad > 0" type="button" @click="addToCart">{{ buttonText }}</button>
+                <button type="button">Add to Cart</button>
             </div>
 
             <div class="detail__layout__tekst__options">
-                <p @click="selectSubtitel('About')" :class="{ 'active': selectedSubtitel === 'About' }">About</p>
-                <p @click="selectSubtitel('Specs')" :class="{ 'active': selectedSubtitel === 'Specs' }">Specs</p>
-                <p @click="selectSubtitel('Reviews')" :class="{ 'active': selectedSubtitel === 'Reviews' }">Reviews</p>
+                <p class="tab" onclick="selectTab('About')">About</p>
+                <p class="tab" onclick="selectTab('Specs')">Specs</p>
+                <p class="tab" onclick="selectTab('Reviews')">Reviews</p>
             </div>
-            <div class="detail__layout__tekst__About" v-if="selectedSubtitel === 'About'">
-                <p>{{ product.omschrijving }}</p>
+            <div class="detail__layout__tekst__About tab-content">
+                <p>Product description goes here...</p>
             </div>
-            <div class="detail__layout__tekst__Specs" v-if="selectedSubtitel === 'Specs'">
-                <p><strong>Kleur:</strong> {{ product.specs.kleur }}</p>
-                <p><strong>Gewicht:</strong> {{ product.specs.gewicht }}</p>
-                <p><strong>Afmetingen:</strong> {{ product.specs.afmetingen }}</p>
+            <div class="detail__layout__tekst__Specs tab-content">
+                <p><strong>Kleur:</strong> Red</p>
+                <p><strong>Gewicht:</strong> 1.5 kg</p>
+                <p><strong>Afmetingen:</strong> 30x20x10 cm</p>
             </div>
-            <div class="detail__layout__tekst__Reviews" v-if="selectedSubtitel === 'Reviews'">
-                <div class="detail__layout__tekst__Reviews__sectie" v-for="review in product.reviews" :key="review.gebruikersnaam">
-                    <h3><strong>{{ review.gebruikersnaam }}:</strong></h3>
-                    <p><strong>Beoordeling:</strong> {{ review.beoordeling }}/5</p>
-                    <p><strong>Opmerking:</strong> {{ review.opmerking }}</p>
+            <div class="detail__layout__tekst__Reviews tab-content">
+                <div class="detail__layout__tekst__Reviews__sectie">
+                    <h3><strong>Username:</strong></h3>
+                    <p><strong>Beoordeling:</strong> 5/5</p>
+                    <p><strong>Opmerking:</strong> Great product!</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <PopupComponent
-            v-if="showPopup"
-            :message="popupMessage"
-            :showGoToCart="product.hoeveelheid_voorraad > 0"
-            :showGoToProducts="true"
-            @onClose="closePopup"
-            @goToCart="goToCart"
-            @goToProducts="goToProducts"
-    />
 </div>
+</body>
