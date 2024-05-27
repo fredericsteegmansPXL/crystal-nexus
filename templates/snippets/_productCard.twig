@@ -1,9 +1,6 @@
 <div class="card__layout">
     <div class="card product__card">
-        {% set productImage = producten.afbeelding.one() %}
-        {% if productImage %}
-            <img src="{{ productImage.url }}" alt="{{ productImage.title }}" class="card-image">
-        {% endif %}
+            <img src="{{ product.afbeelding.one().url }}" alt="{{ product.afbeelding }}" class="card-image">
         <div class="card__content">
             <h2 class="card__title">{{ producten.title }}</h2>
             <p class="card__description">{{ producten.hoofdtekst }}</p>
@@ -13,8 +10,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 
