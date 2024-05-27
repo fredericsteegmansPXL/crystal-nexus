@@ -27,7 +27,7 @@
 
     <div id="productenContainer" class="producten__container">
         {% for product in craft.entries.section('producten').all() %}
-            {% include 'snippets/productCard.twig' with { product: product } %}
+            {% include 'snippets/_productCard.twig' with { product: product } %}
         {% else %}
             <p>Geen producten gevonden.</p>
         {% endfor %}
@@ -41,6 +41,7 @@
     </div>
     </body>
 {% endblock %}
+
 
 
 <script>
@@ -57,7 +58,7 @@
             }
         });
         currentPage = 1; // Reset to first page on new filter
-        renderPagination();
+        renderProducts();
     }
 
     // Deze functie filtert de producten op basis van de prijs
@@ -76,7 +77,7 @@
             product.style.display = show ? '' : 'none';
         });
         currentPage = 1; // Reset to first page on new filter
-        renderPagination();
+        renderProducts();
     }
 
     // Functie om producten en paginering te renderen
@@ -130,6 +131,7 @@
         document.getElementById('zoektekst').addEventListener('input', filterProducten);
     });
 </script>
+
 
 
 

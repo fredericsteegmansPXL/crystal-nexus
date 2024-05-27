@@ -1,5 +1,5 @@
 <div class="card__layout">
-    <div class="card">
+    <div class="card product__card">
         {% set productImage = product.image.one() %}
         {% if productImage %}
             <img src="{{ productImage.url }}" alt="{{ productImage.title }}" class="card-image">
@@ -10,10 +10,10 @@
         </div>
         <div class="card__details">
             <p class="card__price">{{ '€' ~ product.price|number_format(2, ',', '.') }}</p>
-            <button onclick="viewProductDetail('{{ product.id }}')" class="card__button">Bekijk meer</button>
         </div>
     </div>
 </div>
+
 
 
 
