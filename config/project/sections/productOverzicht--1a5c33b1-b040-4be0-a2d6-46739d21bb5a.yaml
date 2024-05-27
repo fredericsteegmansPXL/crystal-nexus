@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 19435fd5-36eb-421a-9af3-53b45b5eba58 # Producten
-handle: producten
+  - 70ec348f-2dcc-4486-8263-b7204a10e978 # producten overzicht
+handle: productOverzicht
 maxAuthors: 1
-name: Producten
+name: 'product overzicht'
 previewTargets:
   -
     __assoc__:
@@ -22,9 +22,6 @@ siteSettings:
   2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
     enabledByDefault: true
     hasUrls: true
-    template: _productDetail.twig
-    uriFormat: 'producten/{slug}'
-structure:
-  maxLevels: null
-  uid: 1c2d0da6-e8ce-46d4-b7ab-42badfb21727
-type: structure
+    template: _products.twig
+    uriFormat: product-overzicht
+type: single
