@@ -1,15 +1,16 @@
 {% extends "_layout.twig" %}
 
 {% set kostQuery = craft.app.request.getParam('kost') %}
-
-
+{% set products = craft.entries.section('producten').all() %}
+{% set numProductsPerPage = 6 %}
+{% set totalPages = (products|length / numProductsPerPage)|round(0, 'ceil') %}
 
 {% block content %}
     <body id="achtergrond2">
     <div class="product__header">
         <div class="product__top">
-            <h1>Kristallen shop</h1>
-            <p>Onze winkel heeft een variatie aan verschillende soorten kristallen. Voor iedereen zit er wel een steentje tussen.</p>
+            <h1>{{ productOverzicht.hoofdtitel }}</h1>
+            <p>{{ productOverzicht.hoofdtekst }}</p>
         </div>
     </div>
 
@@ -33,15 +34,15 @@
     <form action="">
         <div>
             {% for kost in kosten %}
-            <input type="radio" value="{{ kost.title }}" name="kost[]" {% if kost.title in kostQuery %} checked {% endif %}>
-            <label for="{{ kost.title }}">{{ kost.title }}</label>
+                <input type="radio" value="{{ kost.title }}" name="kost[]" {% if kost.title in kostQuery %} checked {% endif %}>
+                <label for="{{ kost.title }}">{{ kost.title }}</label>
             {% endfor %}
         </div>
         <button type="submit">{{ "Filter"|t }}</button>
     </form>
 
-    <div class="card__layout">
-        {% for product in craft.entries.section('producten').all() %}
+    <div class="card__layout" id="productCards">
+        {% for product in products %}
             {% include 'snippets/_productCard.twig' %}
         {% else %}
             <p>Geen producten gevonden.</p>
@@ -49,14 +50,39 @@
     </div>
 
     <!--pagination-->
-    <div class="pagination" id="pagination" style="display: none;">
+    <div class="pagination" id="pagination">
         <ul id="paginationList">
-            <!-- Pagina nummers worden hier ingevoegd via JavaScript -->
+            {% for page in 1..totalPages %}
+                <li><a href="#" onclick="paginate({{ page }}); return false;">{{ page }}</a></li>
+            {% endfor %}
         </ul>
     </div>
     </body>
 
+    <script>
+        function paginate(page) {
+            const products = document.querySelectorAll('.card');
+            const startIndex = (page - 1) * {{ numProductsPerPage }};
+            const endIndex = page * {{ numProductsPerPage }};
 
+            products.forEach((product, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        function filterProducten() {
+            // Implement your filtering logic here
+        }
+
+        function filterByPrice(category) {
+            // Implement your price filtering logic here
+        }
+
+        // Initial pagination
+        paginate(1);
+    </script>
 {% endblock %}
-
-

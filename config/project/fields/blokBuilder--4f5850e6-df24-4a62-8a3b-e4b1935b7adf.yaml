@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: blokBuilder
+instructions: null
+name: 'blok builder'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - d3cef172-3e34-4864-a222-099444e7d028 # tekst + afbeelding
+    - bfca4158-dc4f-4324-bb0f-e685e88882e0 # Form Block
+    - ac196319-f11e-4bec-b344-9e57c44d4e61 # Producten2
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

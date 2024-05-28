@@ -40,18 +40,18 @@ export default {
   <div class="index__kijker">
     <div class="index__kijker__links">
       <img v-if="currentProduct" :src="currentProduct.afbeelding" :alt="currentProduct.titel">
-      <button @click="prevProduct" :disabled="currentIndex === 0">{{ buttonVorigArtikel }}</button>
-      <button @click="nextProduct" :disabled="currentIndex === carouselProducten.length - 1">{{ buttonVolgendArtikel }}</button>
+      <button @click="prevProduct" :disabled="currentIndex === 0">Vorige</button>
+      <button @click="nextProduct" :disabled="currentIndex === carouselProducten.length - 1">Volgend</button>
     </div>
     <div class="index__kijker__links__2"></div>
     <div class="index__kijker__rechts">
-      <p>{{ populairProduct }}</p>
+      <p>Populaire producten</p>
       <h1 v-if="currentProduct && currentProduct.titel">
         {{ currentProduct.titel }}
       </h1>
       <p v-if="currentProduct && currentProduct.omschrijving">
         {{ currentProduct.omschrijving }}</p>
-      <button @click="logButtonClick" type="button">{{ meerInfo }}</button>
+      <button @click="logButtonClick" type="button">meer info</button>
     </div>
   </div>
 </template>

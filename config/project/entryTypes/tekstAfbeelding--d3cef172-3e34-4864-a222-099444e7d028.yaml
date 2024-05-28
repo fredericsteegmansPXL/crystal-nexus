@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  14d75722-3415-4ed0-a9f8-bc2f6989af54:
+  567056c1-a47b-4c5c-8eef-13367728f575:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e2e0c045-345f-414f-bd8a-aaebeea75d16
+            uid: c3850160-4fb0-4d0c-af4a-175503eaf931
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bf6f36b8-d33d-42b1-9184-f0009c62d623 # Hoofdtitel
+            fieldUid: 0d5adc84-159d-4815-a7b0-209aff3e442f # Afbeelding
             handle: null
             includeInCards: false
             instructions: null
@@ -45,7 +45,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ecc8399d-4e07-4dcd-9392-6b3e3a0188ed
+            uid: b2471f63-b586-4b20-98b4-ffb3edb0b16e
             userCondition: null
             warning: null
             width: 100
@@ -60,17 +60,47 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2b7d3ec9-9e0f-4771-8013-3899b9a523e4
+            uid: 615da2fb-2f91-4bc2-9440-2d1afaac49ba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 36664aed-f0f3-4e8b-9bfb-feee11fde10f # Afbeeldign Positie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e01a97b4-9680-4c23-b2df-c4a211a59380
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8f84e9c2-b78d-49e3-8e71-c72bf6520a8f # Show title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: febe31e8-7b00-438c-8ff4-721472f02cc5
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 2b278c4c-202a-4ca4-8a43-624a6e3a218a
+        uid: b09f2a8a-c5ff-4c57-8726-b6dc88475c1a
         userCondition: null
-handle: productOverzicht
+handle: tekstAfbeelding
 hasTitleField: true
 icon: ''
-name: 'product overzicht'
+name: 'tekst + afbeelding'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

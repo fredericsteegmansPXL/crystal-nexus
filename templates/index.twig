@@ -1,69 +1,108 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-<div class="index__main">
-    <div class="index__header">
-        <div class="index__header__links">
-            <h1>{{ entry.hoofdtitel }}</h1>
-            <p>{{ entry.hoofdtekst }}</p>
-            <button type="button">{{  entry.hoofdbutton }}</button>
-        </div>
-        <div class="index__header__rechts">
-            {% if entry.afbeelding|length %}
-            {% set hero = entry.afbeelding.one() %}
-
-            <img src="{{ hero.url }}" alt="{{ hero.title }}">
-            {% else %}
-            <p></p>
-            {% endif %}
-        </div>
-    </div>
-
-
-{#    <!--in de kijker -->#}
-{#    <PopularProductsComponent#}
-{#            :carouselProducten="carouselProducten"#}
-{#            :currentIndex="currentIndex"#}
-{#            @prevProduct="prevProduct"#}
-{#            @nextProduct="nextProduct"#}
-{#            @showProductDetails="showProductDetails"/>#}
-
-{#    <!--    rotating cards-->#}
-    <div class="index__card">
-        <h1>{{  entry.titel2 }}</h1>
-        <div class="index__card__rotate">
-            <div class="index__card__rotate__special" id="card__1">
-                <h2>{{  entry.cardtitel1 }}</h2>
-                <p>{{ entry.cardtekst1 }}</p>
+    {% hook 'after-body-start' %}
+    <div class="index__main">
+        <div class="index__header">
+            <div class="index__header__links">
+                <h1>{{ entry.hoofdtitel }}</h1>
+                <p>{{ entry.hoofdtekst }}</p>
+                <button type="button">{{ entry.hoofdbutton }}</button>
             </div>
-            <div class="index__card__rotate__special" id="card__2">
-                <h2>{{  entry.cardtitel2 }}</h2>
-                <p>{{ entry.cardtekst2 }}</p>
-            </div>
-            <div class="index__card__rotate__special" id="card__3">
-                <h2>{{ entry.cardtitel3 }}</h2>
-                <p>{{ entry.cardtekst3 }}</p>
+            <div class="index__header__rechts">
+                {% if entry.afbeelding|length %}
+                    {% set hero = entry.afbeelding.one() %}
+
+                    <img src="{{ hero.url }}" alt="{{ hero.title }}">
+                {% else %}
+                    <p></p>
+                {% endif %}
             </div>
         </div>
-    </div>
 
-    <!--contact us -->
-    <div class="index__contact">
-        <div class="index__contact__links">
-            {% if entry.afbeelding2|length %}
-                {% set contactpic = entry.afbeelding2.one() %}
-
-                <img src="{{ contactpic.url }}" alt="{{ contactpic.title }}">
-            {% else %}
-                <p></p>
-            {% endif %}
+        <!-- Display Products -->
+        <div class="index__kijker">
+            <div class="card__layout" id="productCards">
+                {% for product in entry.populaireProducten %}
+                    {% include 'snippets/_productCard.twig' with {'product': populaireProducten} %}
+                {% else %}
+                    <p>Momenteel geen populaire producten gevonden.</p>
+                {% endfor %}
+            </div>
         </div>
-        <div class="index__contact__rechts">
-            <h1>{{ entry.contactTitel }}</h1>
-            <p>{{ entry.contactTekst }}</p>
-            <button type="button">{{ entry.contactButton }}</button>
+
+        <!-- rotating cards -->
+        <div class="index__card">
+            <h1>{{ entry.titel2 }}</h1>
+            <div class="index__card__rotate">
+                <div class="index__card__rotate__special" id="card__1">
+                    <h2>{{ entry.cardtitel1 }}</h2>
+                    <p>{{ entry.cardtekst1 }}</p>
+                </div>
+                <div class="index__card__rotate__special" id="card__2">
+                    <h2>{{ entry.cardtitel2 }}</h2>
+                    <p>{{ entry.cardtekst2 }}</p>
+                </div>
+                <div class="index__card__rotate__special" id="card__3">
+                    <h2>{{ entry.cardtitel3 }}</h2>
+                    <p>{{ entry.cardtekst3 }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="index__contact">
+            <div class="index__contact__links">
+                {% if entry.afbeelding2|length %}
+                    {% set contactpic = entry.afbeelding2.one() %}
+                    <img src="{{ contactpic.url }}" alt="{{ contactpic.title }}">
+                {% else %}
+                    <p></p>
+                {% endif %}
+            </div>
+            <div class="index__contact__rechts">
+                <h1>{{ entry.contactTitel }}</h1>
+                <p>{{ entry.contactTekst }}</p>
+                <button type="button">{{ entry.contactButton }}</button>
+            </div>
         </div>
     </div>
-</div>
+    </body>
+
+<script>
+
+        let currentIndex = 0;
+
+        const currentProductImage = document.getElementById('currentProductImage');
+        const currentProductTitle = document.getElementById('currentProductTitle');
+        const currentProductDescription = document.getElementById('currentProductDescription');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function updateProduct(index) {
+            const product = carouselProducten[index];
+            currentProductImage.src = product.afbeelding;
+            currentProductTitle.textContent = product.titel;
+            currentProductDescription.textContent = product.omschrijving;
+        }
+
+        function prevProduct() {
+            currentIndex = (currentIndex === 0) ? carouselProducten.length - 1 : currentIndex - 1;
+            updateProduct(currentIndex);
+        }
+
+        function nextProduct() {
+            currentIndex = (currentIndex === carouselProducten.length - 1) ? 0 : currentIndex + 1;
+            updateProduct(currentIndex);
+        }
+
+        // Add event listeners
+        prevButton.addEventListener('click', prevProduct);
+        nextButton.addEventListener('click', nextProduct);
+
+        // Initialize with first product
+        updateProduct(currentIndex);
+    </script>
+
 
 {% endblock %}

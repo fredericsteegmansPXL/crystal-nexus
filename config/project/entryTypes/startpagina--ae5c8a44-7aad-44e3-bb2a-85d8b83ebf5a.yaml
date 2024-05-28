@@ -96,6 +96,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: e628c71e-0d55-4873-b0bd-d8516b1ff9cd # Populaire producten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55ebd035-9fa2-45ff-9745-3068b972d7f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 797ac42c-be97-4603-bc28-225b3e0bff15 # Afbeelding2
             handle: null
             includeInCards: false

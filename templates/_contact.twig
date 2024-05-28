@@ -3,7 +3,12 @@
 
 {% block content %}
 <main class="contactform">
-    {{ craft.freeform.form("contactform").render() }}
+    <div class="flex justify-center">
+        <div class="w-3/5">
+            {{ craft.formie.renderForm('contactForm') }}
+        </div>
+    </div>
+
 </main>
 
 {% endblock %}

@@ -1,4 +1,4 @@
-dateModified: 1716903467
+dateModified: 1716924421
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
@@ -23,10 +23,15 @@ meta:
     3cf322db-e864-4229-baf5-f9daa604bbba: Footer # Footer
     3d85366f-686a-4b02-96ce-31633abab8f5: 'Public Schema' # Public Schema
     3d552288-5b05-44d1-91ef-7294b67a8429: Navigatie # Navigatie
+    4f5850e6-df24-4a62-8a3b-e4b1935b7adf: 'blok builder' # blok builder
+    5a36ee30-66fa-4dc0-8884-166e0c9a0970: 'Contact Form' # Contact Form
     5ba78f2e-e30c-4756-9ab8-1cb8ea1ea5f2: 'Hero Image' # Hero Image
     5cb4a46a-6325-4bb1-b942-dfd12375193c: kosten # kosten
+    5e86435c-5010-4dfa-8280-d64714aeed73: formfield # formfield
     6cbe8dec-fe9a-49c5-95fb-82362b801659: Simple # Simple
     6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
+    8f84e9c2-b78d-49e3-8e71-c72bf6520a8f: 'Show title' # Show title
+    9cb8a99a-0cde-4039-a3a8-6dc9f35768d7: 'Afbeelding Blok' # Afbeelding Blok
     23a66c0f-6cfe-47da-8104-88da87450938: 'product overzicht' # product overzicht
     29e36a7f-5420-4e52-a330-a37feb1b1cfa: Afmeeting # Afmeeting
     35b337a2-b0ef-4b17-89f4-86e525f0372b: detailbutton # detailbutton
@@ -34,6 +39,7 @@ meta:
     61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
     68c3afc7-d5cb-4434-9310-67d5cc0b7bef: Kleur # Kleur
     70b6a526-01ff-4ec0-b8af-59ac890a1675: kost # kost
+    81fb0060-c7d6-4b0a-a934-6411a532d006: 'Custom Page' # Custom Page
     133fd84e-ea29-4b57-a156-347698fdd14f: reviews # reviews
     388c5095-fdc4-451f-b7ef-b3768792f64c: Prijs # Prijs
     555ca832-9168-4855-9612-5e513d78c745: 'Copy right footer' # Copy right footer
@@ -45,22 +51,30 @@ meta:
     2500db6c-2fd4-4123-b872-fcac09484424: contact # contact
     9632beff-e61b-4270-8675-77dcfde1d40e: cardtitel3 # cardtitel3
     19435fd5-36eb-421a-9af3-53b45b5eba58: Producten # Producten
+    36664aed-f0f3-4e8b-9bfb-feee11fde10f: 'Afbeeldign Positie' # Afbeeldign Positie
     69856e10-99a9-4a55-a17b-20962a29697d: Hoofdtekst # Hoofdtekst
     401541cb-f28f-43a8-9ad1-1740e7c855ff: 'Contact Tekst' # Contact Tekst
     547246a6-9ca7-4c8a-ba25-a7f5f7d4d49a: Hoofdbutton # Hoofdbutton
+    567322b0-2cf5-4ddd-8617-8398676f940e: New # New
+    2302731a-2d9e-4efd-bb3d-20eb98c91358: 'Custom Page' # Custom Page
     a6c4fae1-87c1-46f5-890d-787336d58e12: Dummy # Dummy
+    a8a90462-1ea1-45bb-9fb1-2d1211ed734a: producten2 # producten2
     a13df83e-aa66-49d1-b6fa-4ea6fbaaece5: Producten # Producten
+    ac196319-f11e-4bec-b344-9e57c44d4e61: Producten2 # Producten2
     ae5c8a44-7aad-44e3-bb2a-85d8b83ebf5a: startpagina # startpagina
     b7db6fff-ee95-4591-a572-1d6f25cf3b25: cardtitel1 # cardtitel1
     b997dfda-cd6c-4275-805e-34ff8e8feec2: cardtekst2 # cardtekst2
     bf3fe694-7eb9-465c-91e2-5dd363bde367: Navigatie # Navigatie
     bf6f36b8-d33d-42b1-9184-f0009c62d623: Hoofdtitel # Hoofdtitel
+    bfca4158-dc4f-4324-bb0f-e685e88882e0: 'Form Block' # Form Block
     c2f2127e-f0a9-4c4b-a158-b709d02cbef5: afbeeldingen # afbeeldingen
     cd90f7c3-4c21-4827-970f-dce47c74c709: 'Crystal Nexus' # Crystal Nexus
     cd4966b4-7d76-475a-bf31-fc05fee6ddf9: hoeveelheid # hoeveelheid
+    d3cef172-3e34-4864-a222-099444e7d028: 'tekst + afbeelding' # tekst + afbeelding
     d19047cb-eb46-4120-b805-1c25ffb1cfd8: Footer # Footer
     e1f7c111-5a45-4bc6-912e-3a0095c46886: aanwezig # aanwezig
     e49f55a8-262d-4bf4-b77b-04b459ecbde4: 'Title 2' # Title 2
+    e628c71e-0d55-4873-b0bd-d8516b1ff9cd: 'Populaire producten' # Populaire producten
     efd14935-aca0-4f14-b352-90e0eeb2fe09: 'product overzicht' # product overzicht
     f0f391df-bbc7-4547-a622-735b69445046: logo # logo
     fbee1e6f-0741-4618-a29b-7c1cdd393c76: Primary # Primary
@@ -74,6 +88,16 @@ plugins:
     enabled: true
     licenseKey: H0CTDSLHE78EUZXXFD73WHJK
     schemaVersion: 5.0.74
+  cookie-consent:
+    edition: standard
+    enabled: true
+    licenseKey: IGDX1OYBHA91W4BDSQCQBKC3
+    schemaVersion: 1.5.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: MKVXHYTDMCNJGDG6F66BAQOY
+    schemaVersion: 3.4.4
   freeform:
     edition: express
     enabled: true

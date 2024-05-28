@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  14d75722-3415-4ed0-a9f8-bc2f6989af54:
+  5c9a3e8a-5638-4c79-bbe2-f5d8094bd708:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e2e0c045-345f-414f-bd8a-aaebeea75d16
+            uid: 8ed32abf-0d25-4014-9789-f02239d8f44d
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bf6f36b8-d33d-42b1-9184-f0009c62d623 # Hoofdtitel
+            fieldUid: 0d5adc84-159d-4815-a7b0-209aff3e442f # Afbeelding
             handle: null
             includeInCards: false
             instructions: null
@@ -45,32 +45,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ecc8399d-4e07-4dcd-9392-6b3e3a0188ed
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 69856e10-99a9-4a55-a17b-20962a29697d # Hoofdtekst
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2b7d3ec9-9e0f-4771-8013-3899b9a523e4
+            uid: fee60c18-c9df-45b5-b63d-37b86bcb08ad
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 2b278c4c-202a-4ca4-8a43-624a6e3a218a
+        uid: 50f5d4b1-aa85-4672-97e2-e85cdc5d4134
         userCondition: null
-handle: productOverzicht
+handle: afbeeldingBlok
 hasTitleField: true
 icon: ''
-name: 'product overzicht'
+name: 'Afbeelding Blok'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

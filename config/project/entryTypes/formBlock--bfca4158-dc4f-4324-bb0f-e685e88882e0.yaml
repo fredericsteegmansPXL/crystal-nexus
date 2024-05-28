@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  14d75722-3415-4ed0-a9f8-bc2f6989af54:
+  b0633844-e346-46b0-85ac-d1b03dac80b0:
     tabs:
       -
         elementCondition: null
@@ -30,22 +30,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e2e0c045-345f-414f-bd8a-aaebeea75d16
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: bf6f36b8-d33d-42b1-9184-f0009c62d623 # Hoofdtitel
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ecc8399d-4e07-4dcd-9392-6b3e3a0188ed
+            uid: 8f4d856b-ff8d-4ce8-9ae3-b4b2dd3e975c
             userCondition: null
             warning: null
             width: 100
@@ -60,17 +45,32 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2b7d3ec9-9e0f-4771-8013-3899b9a523e4
+            uid: 4c109aef-3d32-4184-acbb-e5f5350f7adf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5e86435c-5010-4dfa-8280-d64714aeed73 # formfield
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59acf239-242c-4b41-be90-64d27a097d8f
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 2b278c4c-202a-4ca4-8a43-624a6e3a218a
+        uid: d97e7f11-a688-489a-9c2b-fa3c855a593c
         userCondition: null
-handle: productOverzicht
+handle: formBlock
 hasTitleField: true
 icon: ''
-name: 'product overzicht'
+name: 'Form Block'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

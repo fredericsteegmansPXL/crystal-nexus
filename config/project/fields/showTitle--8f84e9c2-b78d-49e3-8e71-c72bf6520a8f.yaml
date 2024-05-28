@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: showTitle
+instructions: null
+name: 'Show title'
+searchable: false
+settings:
+  default: false
+  offLabel: 'Titel niet zichtbaar'
+  onLabel: 'Titel zichtbaar'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
