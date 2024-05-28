@@ -15,29 +15,27 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <p>5 reviews</p>
+                        <p>{{ entry.reviews }}</p>
                     </div>
                     <div class="detail__layout__tekst__info">
                         <h1>{{ entry.title }}</h1>
                         <p>{{ entry.hoofdtekst }}</p>
-                        <p class="aanwezigheid">Aanwezig</p>
+                        <p class="aanwezigheid">{{ entry.aanwezig }}</p>
                         <h2>€{{ entry.prijs }}</h2>
                     </div>
                     <div class="detail__layout__tekst__buttons">
                         <button type="button"><i class="fa-regular fa-heart"></i></button>
                         <select name="quantity" class="quantityDropdown">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
+                            {% for i in 0..entry.stock %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
                         </select>
                         <button type="button">Add to Cart</button>
                     </div>
                     <div class="detail__layout__tekst__options">
-                        <p class="tab" onclick="selectTab('About')">About</p>
-                        <p class="tab" onclick="selectTab('Specs')">Specs</p>
-                        <p class="tab" onclick="selectTab('Reviews')">Reviews</p>
+                        <p class="tab" >About</p>
+                        <p class="tab" >Specs</p>
+                        <p class="tab" >Reviews</p>
                     </div>
 
                     <div class="detail__layout__tekst__Specs tab-content">
@@ -45,13 +43,13 @@
                         <p><strong>Gewicht:</strong> {{ entry.gewicht }}</p>
                         <p><strong>Afmetingen:</strong> {{ entry.afmeeting }}</p>
                     </div>
-                    <div class="detail__layout__tekst__Reviews tab-content">
-                        <div class="detail__layout__tekst__Reviews__sectie">
-                            <h3><strong>Username:</strong></h3>
-                            <p><strong>Beoordeling:</strong> 5/5</p>
-                            <p><strong>Opmerking:</strong> Great product!</p>
-                        </div>
-                    </div>
+{#                    <div class="detail__layout__tekst__Reviews tab-content">#}
+{#                        <div class="detail__layout__tekst__Reviews__sectie">#}
+{#                            <h3><strong>Username:</strong></h3>#}
+{#                            <p><strong>Beoordeling:</strong> 5/5</p>#}
+{#                            <p><strong>Opmerking:</strong> Great product!</p>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </div>

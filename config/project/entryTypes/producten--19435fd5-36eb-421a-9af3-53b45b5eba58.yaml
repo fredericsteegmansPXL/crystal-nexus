@@ -21,6 +21,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            elementCondition: null
+            fieldUid: 133fd84e-ea29-4b57-a156-347698fdd14f # reviews
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56170a2c-a20f-45dd-85a4-03ccab0a3d1a
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -61,6 +76,36 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 9e9b6c1c-548b-43b9-8824-d4584aa7974d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1f7c111-5a45-4bc6-912e-3a0095c46886 # aanwezig
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b37c0dde-96ac-4242-a640-5a46b83c46ba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1ffba4ab-c9f8-4a5f-b520-7a229cda520b # stock
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2a1f185-5a21-4c89-b3bc-d4f64a2456fd
             userCondition: null
             warning: null
             width: 100
