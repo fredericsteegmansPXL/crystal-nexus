@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 70b6a526-01ff-4ec0-b8af-59ac890a1675 # kost
+handle: kosten
+maxAuthors: 1
+name: kosten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2e7d7668-a91d-4a34-a51a-8f30daf55386: # Crystal Nexus
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'kosten/{slug}'
+structure:
+  maxLevels: null
+  uid: 4ba688e7-de20-4951-a294-568a60bcb01f
+type: structure

@@ -1,4 +1,4 @@
-dateModified: 1716888830
+dateModified: 1716903467
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
@@ -24,13 +24,16 @@ meta:
     3d85366f-686a-4b02-96ce-31633abab8f5: 'Public Schema' # Public Schema
     3d552288-5b05-44d1-91ef-7294b67a8429: Navigatie # Navigatie
     5ba78f2e-e30c-4756-9ab8-1cb8ea1ea5f2: 'Hero Image' # Hero Image
+    5cb4a46a-6325-4bb1-b942-dfd12375193c: kosten # kosten
     6cbe8dec-fe9a-49c5-95fb-82362b801659: Simple # Simple
     6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
     23a66c0f-6cfe-47da-8104-88da87450938: 'product overzicht' # product overzicht
     29e36a7f-5420-4e52-a330-a37feb1b1cfa: Afmeeting # Afmeeting
     35b337a2-b0ef-4b17-89f4-86e525f0372b: detailbutton # detailbutton
+    38f83915-c623-473c-b7d1-dd2e491033fd: Kost # Kost
     61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
     68c3afc7-d5cb-4434-9310-67d5cc0b7bef: Kleur # Kleur
+    70b6a526-01ff-4ec0-b8af-59ac890a1675: kost # kost
     133fd84e-ea29-4b57-a156-347698fdd14f: reviews # reviews
     388c5095-fdc4-451f-b7ef-b3768792f64c: Prijs # Prijs
     555ca832-9168-4855-9612-5e513d78c745: 'Copy right footer' # Copy right footer

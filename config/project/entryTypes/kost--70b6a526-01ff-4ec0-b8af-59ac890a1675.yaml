@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  eb82f5d1-6dd9-414d-8d8e-ea346eaf88b0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7decfd9e-8459-4505-b6bb-753e8d3a7e10
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 52e05df6-a91c-4752-b0e0-0d23e056bb01
+        userCondition: null
+handle: kost
+hasTitleField: true
+icon: ''
+name: kost
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
