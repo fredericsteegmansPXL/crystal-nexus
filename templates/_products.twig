@@ -1,5 +1,9 @@
 {% extends "_layout.twig" %}
 
+{% set kostQuery = craft.app.request.getParam('kost') %}
+
+
+
 {% block content %}
     <body id="achtergrond2">
     <div class="product__header">
@@ -25,16 +29,16 @@
         </div>
     </div>
 
-{#    {% set kosten = craft.entries.section('kosten').collect() %}#}
-{#    <form action="">#}
-{#        <div>#}
-{#            {% for kost in kosten %}#}
-{#            <input type="checkbox" value="{{ kost.title }}" name="kost[]" {% if kost.title in kostQuery %} checked {% endif %}>#}
-{#            <label for="{{ kost.title }}">{{ kost.title }}</label>#}
-{#            {% endfor %}#}
-{#        </div>#}
-{#        <button type="submit">{{ "Filter"|t }}</button>#}
-{#    </form>#}
+    {% set kosten = craft.entries.section('kosten').collect() %}
+    <form action="">
+        <div>
+            {% for kost in kosten %}
+            <input type="radio" value="{{ kost.title }}" name="kost[]" {% if kost.title in kostQuery %} checked {% endif %}>
+            <label for="{{ kost.title }}">{{ kost.title }}</label>
+            {% endfor %}
+        </div>
+        <button type="submit">{{ "Filter"|t }}</button>
+    </form>
 
     <div class="card__layout">
         {% for product in craft.entries.section('producten').all() %}
