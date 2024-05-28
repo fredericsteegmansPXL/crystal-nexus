@@ -1,14 +1,13 @@
-{% set producten = craft.entries.section("producten").one() %}
 
-<div class="card__layout">
     <div class="card">
+        <a href="{{ product.url }}">
             <img src="{{ product.afbeelding.one().url }}" alt="{{ product.afbeelding }}" class="card__image">
         <div class="card__content">
-            <h2 class="card__title">{{ producten.title }}</h2>
-            <p class="card__description">{{ producten.hoofdtekst }}</p>
+                <h2 class="card__title">{{ product.title }}</h2>
+            <p class="card__description">{{ product.hoofdtekst }}</p>
         </div>
         <div class="card__details">
-            <p class="card__price">{{ '€' ~ producten.prijs }}</p>
+            <p class="card__price">{{ '€' ~ product.prijs }}</p>
         </div>
+        </a>
     </div>
-</div>

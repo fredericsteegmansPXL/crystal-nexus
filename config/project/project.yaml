@@ -1,4 +1,4 @@
-dateModified: 1716826442
+dateModified: 1716885596
 email:
   fromEmail: frederic.steegmans@student.pxl.be
   fromName: 'Crystal Nexus'
@@ -16,16 +16,17 @@ meta:
     0a66b604-abf7-48be-9dfe-f220f4ee199a: New # New
     0d5adc84-159d-4815-a7b0-209aff3e442f: Afbeelding # Afbeelding
     0d7dfe2d-310e-4fea-9f66-c6e282e4993f: Gewicht # Gewicht
-    1a5c33b1-b040-4be0-a2d6-46739d21bb5a: 'product overzicht' # product overzicht
     1ffba4ab-c9f8-4a5f-b520-7a229cda520b: stock # stock
     2ab87770-18f6-4aa4-a8b7-98c122dd4a1a: cardtitel2 # cardtitel2
     2e7d7668-a91d-4a34-a51a-8f30daf55386: 'Crystal Nexus' # Crystal Nexus
     2f9a4255-b8ae-40ea-8649-cf456b33e30c: 'Contact Button' # Contact Button
     3cf322db-e864-4229-baf5-f9daa604bbba: Footer # Footer
+    3d85366f-686a-4b02-96ce-31633abab8f5: 'Public Schema' # Public Schema
     3d552288-5b05-44d1-91ef-7294b67a8429: Navigatie # Navigatie
     5ba78f2e-e30c-4756-9ab8-1cb8ea1ea5f2: 'Hero Image' # Hero Image
     6cbe8dec-fe9a-49c5-95fb-82362b801659: Simple # Simple
     6d94d9bc-f17d-43c8-aaa7-2b5719a455b2: startpagina # startpagina
+    23a66c0f-6cfe-47da-8104-88da87450938: 'product overzicht' # product overzicht
     29e36a7f-5420-4e52-a330-a37feb1b1cfa: Afmeeting # Afmeeting
     35b337a2-b0ef-4b17-89f4-86e525f0372b: detailbutton # detailbutton
     61f7feb4-4694-484c-893e-fb9a9c007428: cardtekst3 # cardtekst3
@@ -55,6 +56,7 @@ meta:
     cd90f7c3-4c21-4827-970f-dce47c74c709: 'Crystal Nexus' # Crystal Nexus
     d19047cb-eb46-4120-b805-1c25ffb1cfd8: Footer # Footer
     e49f55a8-262d-4bf4-b77b-04b459ecbde4: 'Title 2' # Title 2
+    efd14935-aca0-4f14-b352-90e0eeb2fe09: 'product overzicht' # product overzicht
     f0f391df-bbc7-4547-a622-735b69445046: logo # logo
     fbee1e6f-0741-4618-a29b-7c1cdd393c76: Primary # Primary
 plugins:

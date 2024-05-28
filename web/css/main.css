@@ -781,9 +781,6 @@ h1 {
   .main__nav .nav__item:nth-child(2) {
     margin-left: auto;
   }
-  .main__nav .nav__item:nth-child(4) {
-    margin-left: 20px;
-  }
   .main__nav .nav__item {
     display: block;
   }
@@ -957,7 +954,6 @@ h1 {
   justify-content: center;
   justify-content: center;
   align-items: center;
-  background-color: green;
 }
 @media (max-width: 767px) {
   .card__layout {

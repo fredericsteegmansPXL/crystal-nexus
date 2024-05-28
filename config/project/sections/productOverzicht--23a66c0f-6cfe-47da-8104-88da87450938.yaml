@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 70ec348f-2dcc-4486-8263-b7204a10e978 # producten overzicht
+  - efd14935-aca0-4f14-b352-90e0eeb2fe09 # product overzicht
 handle: productOverzicht
 maxAuthors: 1
 name: 'product overzicht'
@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _products.twig
-    uriFormat: product-overzicht
+    uriFormat: producten
 type: single

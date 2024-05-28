@@ -1,67 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Product Detail</title>
-</head>
-<body>
-<div class="detail">
-    <div class="detail__layout">
-        <div class="detail__layout__foto">
-            <img src="path/to/image.jpg" alt="Product Title">
-        </div>
-        <div class="detail__layout__tekst">
-            <div class="detail__layout__tekst__stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>5 reviews</p>
-            </div>
-            <div class="detail__layout__tekst__info">
-                <h1>Product Title</h1>
-                <p>Product description goes here...</p>
-                <p class="aanwezigheid">Aanwezig</p>
-                <h2>€99.99</h2>
-            </div>
+{% extends "_layout.twig" %}
 
-            <div class="detail__layout__tekst__buttons">
-                <button type="button"><i class="fa-regular fa-heart"></i></button>
-                <select name="quantity" class="quantityDropdown">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <button type="button">Add to Cart</button>
-            </div>
+{% block content %}
 
-            <div class="detail__layout__tekst__options">
-                <p class="tab" onclick="selectTab('About')">About</p>
-                <p class="tab" onclick="selectTab('Specs')">Specs</p>
-                <p class="tab" onclick="selectTab('Reviews')">Reviews</p>
-            </div>
-            <div class="detail__layout__tekst__About tab-content">
-                <p>Product description goes here...</p>
-            </div>
-            <div class="detail__layout__tekst__Specs tab-content">
-                <p><strong>Kleur:</strong> Red</p>
-                <p><strong>Gewicht:</strong> 1.5 kg</p>
-                <p><strong>Afmetingen:</strong> 30x20x10 cm</p>
-            </div>
-            <div class="detail__layout__tekst__Reviews tab-content">
-                <div class="detail__layout__tekst__Reviews__sectie">
-                    <h3><strong>Username:</strong></h3>
-                    <p><strong>Beoordeling:</strong> 5/5</p>
-                    <p><strong>Opmerking:</strong> Great product!</p>
+        <body>
+        <div class="detail">
+            <div class="detail__layout">
+                <div class="detail__layout__foto">
+                    <img src="{{ entry.afbeelding.one().url }}" alt="{{ entry.title }}">
+                </div>
+                <div class="detail__layout__tekst">
+                    <div class="detail__layout__tekst__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>5 reviews</p>
+                    </div>
+                    <div class="detail__layout__tekst__info">
+                        <h1>{{ entry.title }}</h1>
+                        <p>{{ entry.hoofdtekst }}</p>
+                        <p class="aanwezigheid">Aanwezig</p>
+                        <h2>€{{ entry.prijs }}</h2>
+                    </div>
+                    <div class="detail__layout__tekst__buttons">
+                        <button type="button"><i class="fa-regular fa-heart"></i></button>
+                        <select name="quantity" class="quantityDropdown">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                    <div class="detail__layout__tekst__options">
+                        <p class="tab" onclick="selectTab('About')">About</p>
+                        <p class="tab" onclick="selectTab('Specs')">Specs</p>
+                        <p class="tab" onclick="selectTab('Reviews')">Reviews</p>
+                    </div>
+
+                    <div class="detail__layout__tekst__Specs tab-content">
+                        <p><strong>Kleur:</strong> {{ entry.kleur }}</p>
+                        <p><strong>Gewicht:</strong> {{ entry.gewicht }}</p>
+                        <p><strong>Afmetingen:</strong> {{ entry.afmeeting }}</p>
+                    </div>
+                    <div class="detail__layout__tekst__Reviews tab-content">
+                        <div class="detail__layout__tekst__Reviews__sectie">
+                            <h3><strong>Username:</strong></h3>
+                            <p><strong>Beoordeling:</strong> 5/5</p>
+                            <p><strong>Opmerking:</strong> Great product!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</body>
+        </body>
+{% endblock %}

@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="card__layout">
         {% for product in craft.entries.section('producten').all() %}
             {% include 'snippets/_productCard.twig' %}
         {% else %}
